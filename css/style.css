@@ -35,7 +35,7 @@ body p, body a{
     left: 0px;
 }
 
-#front-page-container{
+#page-container{
     background-color: papayawhip;
     display: grid;
     grid-template-areas: "nav"
