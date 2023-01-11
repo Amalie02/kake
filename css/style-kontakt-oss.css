@@ -1,0 +1,404 @@
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Montserrat:wght@200&family=Raleway:wght@200&display=swap');
+
+html{
+    font-size: 16px;
+}
+
+body h1{
+    word-break: break-all;
+    font-size: 1.5rem;
+    font-family: 'Aref Ruqaa Ink', serif;    
+
+}
+
+body h2{
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+body p, body a, label{
+    font-size: 0.9rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+input[placeholder], textarea[placeholder]{
+    font-size: 0.8rem;
+}
+
+#page-container{
+    background-color: papayawhip;
+    display: grid;
+    grid-template-areas: "nav"
+                        "header"
+                        "main"
+                        "footer"; 
+    grid-template-rows: 10vw 25vw 1fr 10vw;
+    min-height: 100vh;
+    height: 100%;
+    width: 100vw;
+}
+/* Grid kode. Hentet fra: https://www.w3schools.com/css/css_grid_container.asp */
+
+nav{
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+
+#mer, .meny_punkt{
+    display: none;
+}
+
+#logo img{
+    width: 10vw;
+    max-width: 70px;
+}
+
+#bars{
+    background-color: black;
+    outline: none;
+    border: none;
+    font-size: 6vw;
+    margin: 1vw;
+}
+
+.nav_meny{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+#subnav_innhold{
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: white;
+    width: 100%;
+}
+
+#subnav_innhold a{
+    float: left;
+    padding: 0.5rem;
+    color: black;
+    text-decoration: none;
+}
+
+.subnav:hover #subnav_innhold{
+    display: block;
+  }
+
+header{
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Hvordan bruke flere farger som bakgrunn. Hentet fra: https://www.w3schools.com/css/css3_gradients.asp*/
+
+#boks{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #ffffff;
+    opacity: 0.6;
+}
+
+main{
+    grid-area: main;
+}
+
+.kontaktKort{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: beige;
+    padding: 20px;
+    margin: 4vw;  
+    box-shadow: 5px 10px 10px grey;
+    border-radius: 5px;
+
+}
+.informasjon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 5px 15px 5px;
+}
+
+.ikonTekst{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.fa-solid{
+    font-size: 0.7rem;
+    padding-right: 5px;
+}
+
+#kart img{
+    padding: 15px 5px 15px 5px;
+    width: 40vw;
+}
+
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+label {
+  padding: 12px 12px 5px 2px;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #CEEAD6;
+  padding: 2px;
+  border: 1px solid white;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  min-width: 10vw;
+  max-width: 13vw;
+}
+
+.skjema {
+  border-radius: 5px;
+  background-color: #b3e5fc;
+  padding: 20px;
+  margin: 4vw;
+  box-shadow: 5px 10px 10px grey;
+}
+
+.input {
+  float: left;
+  width: 100%;
+}
+
+.inputOmrade {
+  float: left;
+  width: 100%;
+}
+
+.inputOmrade textarea{
+    height: 20vw;
+    max-height: 200px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer{
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: black;
+}
+
+.sosialeM{
+    display: flex;
+}
+
+.medierTekst{
+    display: none;
+}
+
+.scTop a{
+    font-size: 2.3vw;
+    color: white;
+}
+
+.fa {
+    padding: 1.5vw;
+    font-size: 2vw;
+    width: 2vw;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30%;
+    margin: 1vw;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-pinterest{
+    background: #cb2027;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+@media only screen and (min-width: 500px){
+    body h1{
+        font-size: calc(1.5rem + 1vw);    
+    }
+
+    body h2{
+        font-size: calc(0.9rem + 1vw);    
+    }
+    
+    body p, body a, label, .fa-solid{
+        font-size: calc(0.5rem + 1vw);
+    }
+
+    input[placeholder], textarea[placeholder]{
+        font-size: calc(0.4rem + 1vw);
+    }
+    /*Kode for å gjøre tekst responsivt. Hentet fra: https://blog.hubspot.com/website/responsive-text*/
+
+    #bars{
+        display: none;
+    }
+
+    #L{
+        display: none;
+    }
+
+    #mer{
+        display: contents;
+        border: none;
+        outline: none;
+        background-color: black;    
+        color: white;
+    }
+
+    .p-5{
+        padding-left: 5px;
+    }
+
+    .meny_punkt{
+        display: contents;
+        display: flex;
+        text-decoration: none;
+        color: white;
+    }
+    
+    .nav_meny{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    #subnav_innhold{
+        margin-top: 3vw;
+    }
+
+}
+
+@media only screen and (min-width: 900px) {
+    body h1{
+        font-size: 3rem;    
+    }
+
+    body h2{
+        font-size: 1.8rem;    
+    }
+    
+    body p, body a, label, .fa-solid{
+        font-size: 1.3rem;
+    }
+
+    input[placeholder], textarea[placeholder]{
+        font-size: 1rem;
+    }
+
+    #mer, .meny_punkt{
+        display: none;
+    }
+
+    #L{
+        display: contents;
+    }
+
+    .subnav{
+        width: 100%;
+    } 
+
+    #subnav_innhold{
+        display: flex !important;
+        justify-content: space-evenly;
+        position: unset;
+        float: unset;
+        background-color: unset;
+        width: 100%; 
+    }
+
+    #subnav_innhold a{
+        color: white;
+    }
+
+    main{
+        display: flex;
+        flex-direction: row;
+        margin: 5vw;
+        box-shadow: 5px 10px 18px grey;
+    }
+
+    .kontaktKort{
+        flex-direction: column;
+        background-color: black;
+        margin: 0%;
+        width: 50%;
+        border-radius: 0%;
+    }
+    .informasjon{
+        justify-content: flex-end;
+    }
+
+    .ikonTekst, .ikonTekst a,.informasjon h2{
+        color: white;
+    }
+    
+    #kart img{
+        border: 1px solid white;
+        background-color: lightblue;
+    }
+    .skjema{
+        width: 50%;
+        margin: 0%;
+        border-radius: 0%;
+    }
+
+    .sosialeM{
+        justify-content: space-evenly;
+        align-content: center;
+        width: 83%;
+    }
+
+    .medierTekst{
+        display: contents;
+        font-size: 17px;
+        color: white;
+    }
+    
+    .fa {
+        font-size: 14px;
+        width: 13px;
+        margin: 5px;
+    }
+
+    .scTop a {
+        font-size: 14px;
+    }
+
+}

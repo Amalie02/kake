@@ -1,0 +1,547 @@
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Montserrat:wght@200&family=Raleway:wght@200&display=swap');
+
+html{
+    font-size: 16px;
+}
+
+body h1{
+    word-break: break-all;
+    font-size: 1.5rem;
+    font-family: 'Aref Ruqaa Ink', serif;    
+
+}
+
+body h2, body h3{
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+}
+
+.body h3{
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+}
+
+body p, body a, body h4{
+    font-size: 0.9rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* body{
+    background-color: papayawhip;
+    margin: 0%;
+    padding: 0%;
+} */
+
+#full-page-container{
+    background-color: papayawhip;
+    display: grid;
+    grid-template-areas: "nav"
+                        "header"
+                        "main"
+                        "footer"; 
+    grid-template-rows: 10vw 25vw 1fr 10vw;
+    min-height: 100vh;
+    min-width: 100vw;
+    height: 100%;
+    width: 100vw;
+}
+/* Grid kode. Hentet fra: https://www.w3schools.com/css/css_grid_container.asp */
+
+nav{
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+
+#mer, .meny_punkt{
+    display: none;
+}
+
+#logo img{
+    width: 10vw;
+    max-width: 70px;
+}
+
+#bars{
+    background-color: black;
+    outline: none;
+    border: none;
+    font-size: 6vw;
+    margin: 1vw;
+}
+
+.nav_meny{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+#subnav_innhold{
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: white;
+    width: 100%;
+}
+
+#subnav_innhold a{
+    float: left;
+    padding: 0.5rem;
+    color: black;
+    text-decoration: none;
+}
+
+.subnav:hover #subnav_innhold{
+    display: block;
+  }
+
+header{
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom right, black, purple, darkmagenta, mediumvioletred, magenta);
+}
+/*Hvordan bruke flere farger som bakgrunn. Hentet fra: https://www.w3schools.com/css/css3_gradients.asp*/
+
+#boks{
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    background-color: #ffffff;
+    border: 2px solid black;
+    opacity: 0.6;
+}
+
+main{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5; 
+    width: 100%;
+}
+
+main hr{
+    border-top: 1px solid black;
+    width: 95%;
+}
+
+#intro{
+    background-color: burlywood;
+}
+
+#intro p{
+    font-weight: bold;
+    margin: 0.5rem;
+}
+
+#intro a{
+    color: black;
+
+}
+
+.innhold{
+    display: flex;
+    flex-direction: column;
+    margin: 5rem 0.5rem 5rem 0.5rem;
+}
+
+.innhold p{
+    text-align: justify;
+    float: right;
+}
+
+.innhold section{
+    padding-bottom: 200px;
+}
+
+#b1{
+    float: right;
+    padding: 1vw;
+    width: 70%;
+    max-width: 400px;
+}
+
+.bRes{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 0.5rem;
+    border: 1px solid black;
+}
+
+.bHoyre{
+    float: right;
+    padding: 1vw;
+    width: 40vw;
+}
+
+.bVenstre{
+    float: left;
+    padding: 1vw;
+    width: 40vw;
+}
+
+#fullTabell{
+    padding-top: 200px;
+    margin: 2vw;
+}
+
+.tabell{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    background-color: #b3e5fc;
+    margin-bottom: 100px;
+}
+/*Kode for å lage tabell med grid. Hentet fra: https://css-tricks.com/snippets/css/complete-guide-grid/*/
+
+.celle{
+    display: flex;
+    align-items: center;
+    padding: 3vw;
+    border: 1px solid black;
+}
+
+.side{
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+    justify-content: center;
+}
+
+.r{
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+    border-top: none;
+}
+
+.res{
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 1;
+    padding: 1rem;
+    border: 1px solid black;
+    border-top: none;
+}
+
+.t{
+    grid-row: 4 / span 1;
+    grid-column: 1 / span 1;
+    border-top: none;
+}
+.til{
+    grid-row: 5 / span 1;
+    grid-column: 1 / span 1;
+    padding: 1rem;
+    border: 1px solid black;
+    border-top: none;
+}
+
+.b{
+    grid-row: 6 / span 1;
+    grid-column: 1 / span 1;
+    border-top: none;
+}
+
+.s{
+    grid-row: 7 / span 1;
+    grid-column: 1 / span 1;
+}
+.etter{
+    display: flex;
+    justify-content: center;
+    grid-row: 8 / span 1;
+    grid-column: 1 / span 1;
+    padding: 2vw;
+}
+
+.etter img{
+    width: 50vw;
+    max-width: 300px;
+}
+
+.click-zoom input[type=checkbox] {
+    display: none
+}
+  
+.click-zoom img {
+    transition: transform 0.25s ease;
+    cursor: zoom-in
+}
+  
+.click-zoom input[type=checkbox]:checked~img {
+    transform: scale(1.5);
+    cursor: zoom-out
+}
+
+#b2{
+    float: right;
+    padding: 1vw;
+    width: 30vw;
+    max-width: 200px;
+}
+
+
+#uuE{
+    display: flex;
+    justify-content: center;
+}
+
+#uuE p{
+    color: black;
+    background-color: #CEEAD6;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    min-width: 60vw;
+    max-width: 70vw;  
+  
+}
+
+#ref{
+    margin: 10rem 2vw 2vw 2vw;
+    padding: 1rem;
+    border: 1px solid black;
+    background-color: peachpuff;
+}
+
+#ref p{
+    display: flex;
+    flex-direction: column;
+    overflow-wrap: break-word;
+}
+
+#ref a{
+    word-break: break-all;
+}
+/*Kode for hvordan fikse tekst som går på utsiden av siden. Hentet fra: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Text/Wrapping_Text*/
+
+footer{
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: black;
+}
+
+.sosialeM{
+    display: flex;
+}
+
+.medierTekst{
+    display: none;
+}
+
+.scTop a{
+    font-size: 2.3vw;
+    color: white;
+}
+
+.fa {
+    padding: 1.5vw;
+    font-size: 2vw;
+    width: 2vw;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30%;
+    margin: 1vw;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-pinterest{
+    background: #cb2027;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+@media only screen and (min-width: 500px){
+    body h1{
+        font-size: calc(2rem + 1vw);    
+    }
+    
+    body h2{
+        font-size: calc(1rem + 1vw);
+    }
+
+    .body h3{
+        font-size: calc(0.9rem + 1vw);
+    }
+    
+    body p, body a, body h4{
+        font-size: calc(0.7rem + 1vw);
+    }
+    /*Kode for å gjøre tekst responsivt. Hentet fra: https://blog.hubspot.com/website/responsive-text*/
+
+    #bars, #L{
+        display: none;
+    }
+
+    #mer{
+        display: contents;
+        border: none;
+        outline: none;
+        background-color: black;    
+        color: white;
+    }
+
+    .p-5{
+        padding-left: 5px;
+    }
+
+    .meny_punkt{
+        display: contents;
+        display: flex;
+        text-decoration: none;
+        color: white;
+    }
+    
+    .nav_meny{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    #subnav_innhold{
+        margin-top: 3vw;
+    }
+
+    .tabell{
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+        margin-bottom: 30vw;
+    }
+    
+    .venstre{
+        border-left: none;
+    }
+    
+    .side{
+        grid-row: 1 / span 1;
+        grid-column: 1 / span 2;
+    }
+    
+    .r{
+        grid-row: 2 / span 1;
+        grid-column: 1 / span 1;
+    }
+    
+    .res{
+        grid-row: 3 / span 1;
+        grid-column: 1 / span 1;
+    }
+    
+    .t{
+        grid-row: 2 / span 1;
+        grid-column: 2 / span 1;
+    }
+    .til{
+        grid-row: 3 / span 1;
+        grid-column: 2 / span 1;
+    }
+    
+    .b{
+        grid-row: 4 / span 1;
+        grid-column: 1 / span 2;
+    }
+    
+    .s{
+        grid-row: 5 / span 1;
+        grid-column: 1 / span 2;
+        justify-content: center;
+        border-top: 1px solid black;
+    }
+    
+    .etter{
+        grid-row: 6 / span 1;
+        grid-column: 1 / span 2;
+    }
+    
+}
+
+@media only screen and (min-width: 900px) {
+    body h1{
+        font-size: 3rem;    
+    }
+    
+    body h2{
+        font-size: 1.6rem;
+    }
+    
+    .body h3{
+        font-size: 1.5rem;
+    }
+
+    body p, body a, body h4{
+        font-size: 1.3rem;
+    }
+
+    #mer, .meny_punkt{
+        display: none;
+    }
+
+    #L{
+        display: contents;
+    }
+
+    .subnav{
+        width: 100%;
+    } 
+
+    #subnav_innhold{
+        display: flex !important;
+        justify-content: space-evenly;
+        position: unset;
+        float: unset;
+        background-color: unset;
+        width: 100%; 
+    }
+
+    #subnav_innhold a{
+        color: white;
+    }
+
+    #fullTabell{
+        margin: 5vw;
+    }
+    
+    .sosialeM{
+        justify-content: space-evenly;
+        align-content: center;
+        width: 83%;
+    }
+
+    .medierTekst{
+        display: contents;
+        font-size: 17px;
+        color: white;
+    }
+    
+    .fa {
+        font-size: 14px;
+        width: 13px;
+        margin: 5px;
+    }
+
+    .scTop a {
+        font-size: 14px;
+    }
+
+}

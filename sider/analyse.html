@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="En side som analyserer eksamensoppgave 2022.">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!--Bilde. Hentet fra: https://www.vecteezy.com/free-vector/autumn, Autumn Vectors by Vecteezy-->
+    <!--Favicon konverterer. Hentet fra: https://realfavicongenerator.net/-->
+
+    <meta property="og:title" content="Analyse"> 
+    <meta property="og:description" content="Denne siden tar for seg en analyse av egen nettside ved hjelp av ulike verktøy. I tillegg har siden også en tabell som tar for seg tilgjengelighetserklæringen, og hvilke krav nettsiden dekker."> 
+    <meta property="og:url" content="https://itstud.hiof.no/~iagresho/Deleksamen%204/innholdssider/analyse.html"> 
+    <meta property="og:image" content="https://itstud.hiof.no/~iagresho/Deleksamen%204/images/analyse.jpg"> 
+    <!--Bilde. Hentet fra: https://www.vecteezy.com/free-vector/analyze, Analyze Vectors by Vecteezy--> 
+    <meta property="og:site_name" content="Deleksamen 4"> 
+    <meta property="og:type" content="website"> 
+
+    <meta name="twitter:card" content="summary_large_image"> 
+    <meta name="twitter:title" content="Analyse"> 
+    <meta name="twitter:description" content="Denne siden tar for seg en analyse av egen nettside ved hjelp av ulike verktøy. I tillegg har siden også en tabell som tar for seg tilgjengelighetserklæringen, og hvilke krav nettsiden dekker."> 
+    <meta name="twitter:site" content="@eksamen22"> 
+    <meta property="twitter:image" content="https://itstud.hiof.no/~iagresho/Deleksamen%204/images/analyse.jpg"> 
+    <!--Bilde. Hentet fra: https://www.vecteezy.com/free-vector/analyze, Analyze Vectors by Vecteezy--> 
+    <meta name="twitter:creator" content="@iagresho"> 
+    <!--Implemententering av sosiale meta tagger. Hentet fra: https://www.everywheremarketer.com/blog/ultimate-guide-to-social-meta-tags-open-graph-and-twitter-cards-->
+
+    <link href="../css/style-annalyse.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Montserrat:wght@200&family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/adccb45baa.js" crossorigin="anonymous"></script>
+    <title>Deleksamen 4</title>
+</head>
+<body>
+    <a name="top"></a>
+    <div itemscope itemtype="https://schema.org/WebPage" id="full-page-container">
+        <header>
+            <div id="boks">
+                <h1 itemprop="headline">Analyse</h1>
+            </div>
+        </header>
+        <!--Kode for boks i header. Hentet fra: https://www.w3schools.com/css/css_image_transparency.asp-->
+        <nav>
+            <div id="logo">
+                <a href="../index.html"><img itemprop="image" src="../images/logo.png" alt="logo som fører deg tilbake til startside"></a>
+            </div>
+            <!--Logo. Laget og hentet fra: https://www.freelogodesign.org/-->
+            <div class="nav_meny">
+                <a href="../index.html" class="meny_punkt">Hjem</a>
+                <a href="kontakt-oss.html" class="meny_punkt">Kontakt oss</a>
+                <div tabindex="0" class="subnav">
+                    <button title="hamburgermeny" id="bars" class="fa-solid fa-bars fa-1x fa-inverse"></button>
+                    <!--Bars ikon. Hentet fra: https://fontawesome.com/icons/bars?s=solid&f=classic-->
+                    <button title="mer-knapp" id="mer">Mer<i class="fa-solid fa-angle-down fa-inverse p-5"></i></button>
+                    <!--Angle down ikon. Hentet fra: https://fontawesome.com/icons/angle-down?s=solid&f=classic-->
+                    <div id="subnav_innhold">
+                        <div id="L">
+                            <a href="../index.html">Hjem</a>
+                            <a href="kontakt-oss.html">Kontakt oss</a>
+                        </div>
+                        <a href="uu-vs-seo.html">UU Vs. SEO</a>
+                        <a href="cms.html">CMS</a>
+                        <a href="analyse.html">Analyse</a>
+                    </div>
+                </div>
+            </div>
+            <!--Kode for å lage subnavigator. Hentet fra: https://www.w3schools.com/howto/howto_css_subnav.asp-->
+        </nav>
+        <main itemprop="mainContentOfPage">
+            <div itemprop="description text" id="intro">
+                <p>Oppgave 1 i deleksamen 4 gikk ut på å gjennomføre en analyse av egen nettside. 
+                    Det vil si at jeg skal gjøre en SEO-, UU- og Heuristisk evaluering. 
+                    Ettersom kontakt- og analyse sidene ikke er ferdig, 
+                    vil jeg kun gjøre en analyse av start-, CMS- og SEO sidene. 
+                    På denne siden vil jeg dokumentere mine resultater og 
+                    hvilke endringer jeg gjorde til slutt. For å analysere 
+                    nettsiden min har jeg tatt i bruk verktøyene <a href="https://wave.webaim.org/">WAVE</a> (Web Accessibillity Evaluation Tool) 
+                    og <a href="https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk">Lighthouse</a>, samtidig artikkelen <a href="https://www.nngroup.com/articles/ten-usability-heuristics/">«10 Usability Heuristics for User Interface Design»</a> skrevet av Nielsen Norman Group.
+                </p>
+            </div>
+            <article itemprop="speakable" class="innhold">
+                <h2 itemprop="about alternativeHeadline breadcrumb">Wave</h2>
+                <p itemprop="text">Wave er et evalueringsverktøy som 
+                    analyserer nettsiden slik at man kan gjøre den mer tilgjengelig for brukere med ulike 
+                    typer vansker(WebAIM, u.å.). Dette verktøyet identifiserer feil rundt tilgjengelighet, 
+                    og feil basert på WCAG.
+                    <br>Når jeg evaluerte mine sider ved hjelp av Wave, passet 
+                    jeg på å justere skjermstørrelsen, slik at jeg fikk testet de ulike breakpointsene. På 
+                    sidene om Søkemotoroptimalisering (SEO) og Content Management System (CMS), dukket 
+                    det opp 3 alerts; "skipped heading level", "redundandant link" og "underlined text". 
+                    Den første alerten viste til overskriftene i tabellen på siden.<img src="../images/h3.PNG" alt="Bilde av en alert for feil tag-bruk" id="b1"> 
+                    Overskriftene stod som "h4", 
+                    og tidligere på siden hadde jeg kun brukt til "h3". Dette problemet løste jeg derfor 
+                    ved å endre overskriftene til "h3". Den andre alerten viste til referanselisten nederst 
+                    på siden. "Redundandant link" forteller meg at jeg har en link som er gjentagende. 
+                    Noen av referansene i lista har samme link, da de kommer fra samme nettside. 
+                    Dersom jeg endrer på disse linkene vil referansene bli feil. Derfor valgte jeg å 
+                    la de stå slik de var. Den siste alerten viste til understrekene som overskriftene i tabellen fikk 
+                    når skjermen ble justert ned. Alerten fortalte at understreker viser brukeren at dette er en link. 
+                    Ettersom overskriftene ikke er linker, løste jeg problemet ved å fjerne dekorasjonen.
+                    <br>I tillegg til disse feilene, dukket også opp en alert som sa at jeg hadde tomme knapper. 
+                    Denne alerten viste til knappene i navigasjonsområde på toppen av siden. Ettersom navigasjonsområdet 
+                    er likt på alle sidene, var denne feilen gjentagende. 
+                    Alerten gjaldt knappene som hadde ikoner over seg, altså hamburgermenyen 
+                    og nedtrekkspilen bak "meny". Dette løste jeg ved å legge ikonene inn i "a"-tagger istedenfor "button"-taggen.
+                </p>        
+            </article>
+            <article itemprop="speakable" class="innhold">
+                <h2 itemprop="about alternativeHeadline breadcrumb">Lighthouse</h2>
+                <p itemprop="text">Det neste evalueringsverktøyet jeg tokk i bruk var Lighthouse. 
+                    Dette er et verktøy laget av Google, som allerede ligger implementert inne i nettleserens DevTools(Lighthouse Overview, 2022). 
+                    Lighthouse lar deg kjekke en URL opp mot ulike punkter, og genererer en rapport med resultater. 
+                    Rapporten forteller hvilke deler nettsiden skåret dårlig på, og hvordan det kan forbedres. 
+                    Verktøyet har mulighet for å teste både mobil- og desktopversjonen. Når jeg brukte verktøyet 
+                    huket jeg av for punktene Performance, Accesseibility, Best Practices og SEO.
+                </p>
+                <section>
+                    <h3 itemprop="breadcrumb about">Startsiden</h3>
+                    <p itemprop="text">Den første siden jeg evaluerte var startsiden. Ved evaluering av mobilversjonen fikk siden 100 
+                        i Best Practices, 95 i Accessibility og 75 i SEO. Ettersom jeg skåret lavest på SEO er det dette punktet 
+                        jeg skal fokusere på og forbedre. Den første feilmeldingen som dukket opp var at siden manglet en meta-tag 
+                        med en beskrivelse av sidens innhold. Fikset feilen ved å legge til en meta-tag i header med name="beskrivelse". 
+                        Den neste feilen gjaldt nedtrekksmenyen og knappene for sosiale medier nederst på siden. Problemet var at 
+                        linkene i disse knappene ikke var "crawlable". For sosiale medie knappene valgte jeg å ikke endre, 
+                        da disse knappene ikke skal funke. Valgte derfor å endre fra "a"-tag, tilbake til "button"-tag rundt ikonene. 
+                        Etter mye fram og tilbake, fant jeg ut at problemet var at knappene manglet en "title"-attributt 
+                        med en beskrivelse av knappene. Jeg valgte derfor å implementere dette på alle sidene i nettsiden. 
+                        Den siste feilen som dukket opp var at størrelsen på teksten var for liten. For å gjøre den 
+                        mobilvennlig, må teksten være over 12px, mens min ligger på 11.2px. Jeg endret derfor 
+                        størrelsen på "p"- og "a"-tagene på siden til 0.9rem, istedenfor 0.7rem på alle sidene.
+                        <br>Ved evaluering av desktopversjonen fikk siden 95 i Accessibility, 92 i Best Practices og 80 i SEO. 
+                        Feilene som dukket opp var de samme som gjaldt for mobilversjonen. Det var derfor ikke så mye å forbedre. 
+                        En av feilene som dukket opp i Best Practices gjaldt logoen. Når siden blir justert opp til desktop, 
+                        får logoen til siden lav oppløsning. Dette problemet løste jeg så godt det lot seg gjøre, 
+                        ved å sette en "max-width". Det beste ville vært å bytte logo til noe med bedre oppløsning, 
+                        men det har jeg ikke verktøy til.
+                    </p>   
+                    <div class="bRes">
+                        <div>
+                            <h4>Mobil</h4>
+                            <img src="../images/lighthouse/startside-mobil-for.png" alt="Bilde av lighthouse resultatene for mobil" class="bHoyre">
+                        </div>
+                        <div>
+                            <h4>Desktop</h4>
+                            <img src="../images/lighthouse/startside-desk-for.png" alt="Bilde av lighthouse resultatene for desktop" class="bVenstre">
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h3 itemprop="breadcrumb about">Universell Utforming Vs. Søkemotoroptimalisering</h3>
+                    <p itemprop="text">Den neste siden jeg evaluerte var siden om universell 
+                        utforming og søkemotoroptimalisering. Ved evaluering av mobilversjonen fikk siden 100 i 
+                        Best Practices, 94 i Accessibility og 75 i SEO. Feilene og manglene som dukket opp var de 
+                        samme som dukket opp ved evaluering av starsidens mobilversjon. Feilene gjaldt mangel på 
+                        "meta"-tag, linker som ikke er "crawlable" og for liten skriftstørrelse. Disse feilene 
+                        rettet jeg derfor opp på lik måte som for startsiden.
+                        <br>Ved evaluering av desktopversjonen fikk siden 94 i Accessibility, 92 i 
+                        Best Practices og 80 i SEO. Dette er det samme resultatet startsiden fikk. 
+                        Feilene er også de samme, og er derfor allerede fikset på.
+                    </p>
+                    <div class="bRes">
+                        <div>
+                            <h4>Mobil</h4>
+                            <img src="../images/lighthouse/uuSeo-mobil-for.png" alt="Bilde av lighthouse resultatene for mobil" class="bHoyre">
+                        </div>
+                        <div>
+                            <h4>Desktop</h4>
+                            <img src="../images/lighthouse/uuSeo-desk-for.png" alt="Bilde av lighthouse resultatene for desktop" class="bVenstre">
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h3 itemprop="breadcrumb about">Content Management System</h3>
+                    <p itemprop="text">Den siste siden jeg evaluerte ved hjelp av Lighthouse var siden om 
+                        Content Management System. Ved evaluering av mobilversjonen fikk siden 100 i Best Practices, 
+                        95 i Accessibility og 75 i SEO. Ved evaluering av desktopversjonen fikk siden 95 i Accessibility, 
+                        92 i Best Practices og 80 i SEO. Feilene som dukket opp ved evalueringene er de 
+                        samme som gjaldt for startsiden, og siden om Universell utforming og Søkemotoroptimalisering. 
+                    </p>    
+                    <div class="bRes">
+                        <div>
+                            <h4>Mobil</h4>
+                            <img src="../images/lighthouse/cms-mobil-for.png" alt="Bilde av lighthouse resultatene for mobil" class="bHoyre">
+                        </div>
+                        <div>
+                            <h4>Desktop</h4>
+                            <img src="../images/lighthouse/cms-desk-for.png" alt="Bilde av lighthouse resultatene for desktop" class="bVenstre">
+                        </div>
+                    </div>
+                </section>
+            </article>
+            <article itemprop="speakable" class="innhold">
+                <h2 itemprop="about alternativeHeadline breadcrumb">Heuristisk evaluering</h2>
+                <p itemprop="text">Den siste formen for evaluering jeg skal ta for meg er den Heuristiske. 
+                    Ved denne evaluering skal jeg ikke ta i bruk tekniske verktøy.  Derimot skal jeg ta for 
+                    meg noen av punktene nevnt i artikkelen "10 Usability Heuristics for User Interface 
+                    Design"(Nielsen, 2020) som er relevante.
+                </p>
+                <section class="innhold">
+                    <h3 itemprop="breadcrumb about">#1: Visibility of system status</h3>
+                    <p itemprop="text">Det første punktet handler om å holde brukerne informert. De skal til enhver tid vite hva de gjør, og hvor de er. I tillegg nevner artikkelen at en nettside burde være forutsigbart. Slik kan brukeren lære seg systemet og forhåpentligvis bedre opplevelsen. 
+                        Samtidig vil dette trolig styrke tillitten brukeren har til eier av nettsiden. 
+                        Dette punktet kunne nettsiden min vært bedre på å følge. Navigeringsområdet, 
+                        overskrift og footer er lik på alle sidene, og skaper en rød tråd. Derimot er det ingenting som 
+                        viser hvor du er, bortsett fra overskriften, eller hva du har trykket på. Dette kan løses enkelt. 
+                        Blant annet kan man legge igjen et merke på den knappen man trykket på i navigeringsområdet. 
+                        Slik kan brukeren se hvor på nettstedet man befinner seg. 
+                    </p>
+                </section>
+                <section class="innhold">
+                    <h3 itemprop="breadcrumb about">#2: Match between system and the real world</h3>
+                    <p itemprop="text">Det andre punktet forteller at språket som brukes, og designet på siden burde tilpasses brukermålgruppen. Deriblant burde man unnlate å bruke et språk som ikke er forståelig for brukeren. I tillegg burde designet være basert på den spesifikke brukeren man ønsker at skal besøke siden. Ikke alt er like logisk for alle. Samtidig burde nettsiden vøre strukturert fornuftig. Slik blir det lettere for brukeren å lære og huske hvordan siden er strukturert. Den ønskelige målgruppen for nettsiden min, er noen med litt forkunnskaper rundt IT. Målgruppen er derimot ikke låst til den spesifikke brukeren. Siden er strukturert slik at brukeren skal få den informasjonen de trenger, før de leser hoveddelen. Mine sider har et ganske likt oppsett, og er godt strukturert.
+                    </p>
+                </section>
+                <section class="innhold">
+                    <h3 itemprop="breadcrumb about">#3: User control and freedom</h3>
+                    <p itemprop="text">Det tredje punktet omhandler at bruker skal ha kontroll og frihet. Dersom de trykker inn på noe med et uhell, kan det å ha en mulighet til å enkelt gå tilbake gi brukeren følelsen av kontroll. Man burde unngå å lage et komplisert system. Dette fordi brukeren kan bli frustrert, og som følge gi en dårlig opplevelse av nettsiden. Når det er lett å angre eller å avslutte prosessen, kan brukeren føle frihet. Min nettside har ingen handlinger som man behøver for eksempel, en avbryt knapp. Derimot har alle sidene en hjem-knapp i navigeringsområdet. I tillegg vil logoen ta deg til startsiden, dersom man trykker på den. 
+                    </p>
+                </section>
+                <section class="innhold">
+                    <h3 itemprop="breadcrumb about">#5: Error prevention</h3>
+                    <p itemprop="text">Det femte punktet forteller at det er viktig å hindre feilmeldinger fra å oppstå, eller gi brukeren gode beskjeder om feilen. Nettsiden min har ikke mange steder hvor det kan oppstå feilmelding. Et av de stedene er ved kontaktskjemaet som kan fylles ut og sendes. Dette skjemaet fungerer derimot ikke, og vil derfor ikke være et problem. Dersom det hadde funket, kunne jeg brukt PHP til å hindre feilmeldinger, eller sende en beskjed til bruker.     
+                    </p>
+                </section> 
+                <section class="innhold">
+                    <h3 itemprop="breadcrumb about">#7: Flexibility and efficiency of use</h3>
+                    <p itemprop="text">Det syvende punktet handler om snarveier, skjult på nettsiden. 
+                        Dette kan øke hastigheten til brukeren, 
+                        og gjøre navigering lettere. Dette punktet følger nettsiden min dårlig. 
+                        For å følge dette bedre har jeg implementert en snarvei fra toppen av siden, 
+                        direkte til hovedinnholdet.<img src="../images/snarvei.png" alt="Bilde av en snarvei link, med skriften 'til toppen av siden'" id="b2"> 
+                        I tillegg har jeg plasserte en link på bunnen av siden som vil ta deg direkte til toppen.
+                    </p>
+                </section>  
+                <section class="innhold">
+                    <h3 itemprop="breadcrumb about">#8: Aesthetic and minimalist design</h3>
+                    <p itemprop="text">Det åttende punktet forteller at nettsider burde ha et estetisk og minimalistisk design. Innholdet på siden burde være relevant for brukeren. Dette fordi den irrelevante informasjonen vil konkurrere mot den relevante informasjonen, og gjøre den mindre synlig. Det er viktig å alltid holde fokuset på innholdet mens man designer. Dette føler jeg nettsiden min kunne gjort bedre. Designet er simpelt med tydelige farger som skille innhold, men på innholdssidene for CMS og UU Vs. SEO virker uoversiktlige. Det er mye informasjon som skal med, som fører til mye tekst. Det tekstlige innholdet kunne vært designet på en slik måte at man fikk mere luft.
+                    </p>
+                </section>
+                <section class="innhold">
+                    <h3 itemprop="breadcrumb about">#10: Help and documentation</h3>
+                    <p itemprop="text">Det tiende punktet omhandler veiledning for oppgaver. Systemet burde i grunn være bygd opp på en slik måte at det ikke behøver noen veiledning. Dersom man derimot trenger veiledning, må det legges til for eksempel hjelpetekst. Den eneste oppgaven min nettside har, er å fylle ut kontaktskjemaet. I utfyllingsområdene har jeg plassert veiledende, eksempel tekster som hjelper brukeren å forstå hva som skal fylles ut.
+                    </p>
+                </section>    
+            </article>
+            <hr>
+            <article itemscope itemtype="https://schema.org/Table" id="fullTabell">
+                <section class="tabell">
+                    <div itemprop="alternativeHeadline" class="side celle">
+                        <h2>Endringer gjort basert på analyse:</h2>
+                    </div>
+                    <div itemprop="alternativeHeadline" class="r celle">
+                        <h2>Resultat</h2>
+                    </div>
+                    <div itemprop="text" class="res">
+                        <p>Knappene i navigeringsområdet står som tomme.
+                            <br>Knappene i navigeringsområdet er ikke crawlable.
+                            <br>Knappene for sosiale medier står tomme.
+                            <br>Manglet "meta"-tag med beskrivelse av siden.
+                            <br>Gjentakande linker.
+                            <br>Skrift i mobilformat er for liten.
+                            <br>Rød tråd gjennom navigeringsområdet, oversikt og footer.
+                            <br>Mangler gode visuelle uthevinger av hvor på nettsiden man befinner seg.
+                            <br>God språk og struktur.
+                            <br>Mangler angre knapp, annet enn logo.
+                            <br>Mangler feilbehandling.
+                            <br>Mangler snarveier.
+                            <br>Relevant innhold er trangt og uoversiktlig.
+                            <br>Gode veiledere ved oppgaver.
+                            </p>
+                    </div>
+                    <div itemprop="alternativeHeadline" class="t celle venstre">
+                        <h2>Tiltak</h2>
+                    </div>
+                    <div itemprop="text" class="til venstre">
+                        <p>La til en "title"-tag i knappene.
+                            <br>Ignorerte de tomme knappene for sosiale medier.
+                            <br>La til en "meta"-tag med beskrivelse av siden i header.
+                            <br>Forstørret skriftstørrelsen med 0.2rem.
+                            <br>La til snarvei til hovedinnholdet på siden.
+                            <br>La til en snarvei til toppen av siden.
+                            </p>
+                    </div>
+                    <div itemprop="description" class="b celle">
+                        <h2>Bilde av sidene etter endringer er implementert:</h2>
+                    </div>
+                    <div itemprop="alternativeHeadline" class="s celle" id="startS">
+                        <h2>Startside</h2>
+                    </div>
+                    <div class="etter click-zoom" id="startSb">
+                        <label>
+                            <input type="checkbox">
+                            <img src="../images/for/for-startside.png" alt="Bilde av siden etter forbedringer er gjort">
+                        </label>
+                    </div>
+                    <!--Kode for å zoome inn på bilder ved tasteklikk. Hentet fra: https://stackoverflow.com/questions/39858998/zoom-in-and-out-on-mouse-click-with-css-->
+                </section>
+                <section class="tabell">
+                    <!--<div itemprop="alternativeHeadline" class="side celle">
+                        <h2>UU Vs. SEO</h2>
+                    </div>
+                    <div itemprop="alternativeHeadline" class="r celle">
+                        <h2 >Resultat</h2>
+                    </div>
+                    <div itemprop="text" class="res celle">
+                        <p>somf</p>
+                    </div>
+                    <div itemprop="alternativeHeadline" class="t celle venstre">
+                        <h2>Tiltak</h2>
+                    </div>
+                    <div itemprop="text" class="til celle venstre">
+                        <p>somf</p>
+                    </div>
+                    <div itemprop="description" class="b celle">
+                        <h2>Bilde av siden etter endringer er implementert:</h2>
+                    </div>-->
+                    <div itemprop="alternativeHeadline" class="s celle" id="uuSeoS">
+                        <h2>Universell Utforming Vs. Søkemotoroptimalisering</h2>
+                    </div>
+                    <div class="etter click-zoom" id="uuSeoSb">
+                        <label>
+                            <input type="checkbox">
+                            <img src="../images/for/for-uuseo.png" alt="Bilde av siden etter forbedringer er gjort">
+                        </label>
+                    </div>
+                    <!--Kode for å zoome inn på bilder ved tasteklikk. Hentet fra: https://stackoverflow.com/questions/39858998/zoom-in-and-out-on-mouse-click-with-css-->
+                </section>
+                <section class="tabell">
+                    <!--<div itemprop="alternativeHeadline" class="side celle">
+                        <h2>CMS</h2>
+                    </div>
+                    <div itemprop="alternativeHeadline" class="r celle">
+                        <h2>Resultat</h2>
+                    </div>
+                    <div itemprop="text" class="res celle">
+                        <p>somf</p>
+                    </div>
+                    <div itemprop="alternativeHeadline" class="t celle venstre">
+                        <h2>Tiltak</h2>
+                    </div>
+                    <div itemprop="text" class="til celle venstre">
+                        <p>somf</p>
+                    </div>
+                    <div itemprop="description" class="b celle">
+                        <h2>Bilde av siden etter endringer er implementert:</h2>
+                    </div>-->
+                    <div itemprop="alternativeHeadline" class="s celle" id="cmsS">
+                        <h2>Content Management System</h2>
+                    </div>
+                    <div class="etter click-zoom" id="cmsSb">
+                        <label>
+                            <input type="checkbox">
+                            <img src="../images/for/for-cms.png" alt="Bilde av siden etter forbedringer er gjort">
+                        </label>
+                    </div>
+                    <!--Kode for å zoome inn på bilder ved tasteklikk. Hentet fra: https://stackoverflow.com/questions/39858998/zoom-in-and-out-on-mouse-click-with-css-->
+                </section>
+            </article>
+            <a href="tilgjengelighetserklæring.html" id="uuE"><p>En tilgjengelighetserklæring for denne nettsiden</p></a>
+            <hr>
+            <section itemscope itemtype="https://schema.org/CreativeWork" class="innhold" id="ref">
+                <h2>Refferanser</h2>
+                <p itemprop="citation">Lighthouse overview. (2022, 24. mai). Chrome Developers. <a href="https://developer.chrome.com/docs/lighthouse/overview/">
+                    https://developer.chrome.com/docs/lighthouse/overview/</a></p>
+                <p itemprop="citation">Nielsen, J. (2020, 15. november). 10 Usability Heuristics for User Interface Design. <a href="https://www.nngroup.com/articles/ten-usability-heuristics/">
+                    https://www.nngroup.com/articles/ten-usability-heuristics/</a></p>
+                <p itemprop="citatiom">WAVE Web Accessibility Evaluation Tools. (u.å.). Hentet 10. desember 2022, fra <a href="https://wave.webaim.org/">
+                    https://wave.webaim.org/</a></p>
+
+            </section>
+        </main>
+        <footer>
+            <div class="sosialeM">
+                <div>
+                    <a href="" class="fa fa-facebook"></a>
+                    <span class="medierTekst">Facebook</span>
+                </div>
+                <div>
+                    <a href="" class="fa fa-pinterest"></a>
+                    <span class="medierTekst">Pinterest</span>
+                </div>
+                <div>
+                    <a href="" class="fa fa-twitter"></a>
+                    <span class="medierTekst">Twitter</span>
+                </div>
+            </div>
+            <!--Delingsknapper for sosiale medier. Hentet fra: https://www.w3schools.com/howto/howto_css_social_media_buttons.asp-->
+            <span class="scTop"><a href="#top">Til toppen av siden</a></span>
+            <!--Kode som tar deg til toppen av siden. Hentet fra: https://www.computerhope.com/issues/ch001475.htm-->
+        </footer>
+    </div>
+</body>
+</html>
+<!--Microdata. Hentet fra: https://schema.org/-->

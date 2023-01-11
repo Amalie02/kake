@@ -1,0 +1,721 @@
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Montserrat:wght@200&family=Raleway:wght@200&display=swap');
+
+html{
+    font-size: 16px;
+}
+
+body h1{
+    word-break: break-all;
+    font-size: 1.5rem;
+    font-family: 'Aref Ruqaa Ink', serif;    
+
+}
+
+body h2, body h3{
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+}
+
+body p, body a{
+    font-size: 0.9rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+#page-container{
+    background-color: papayawhip;
+    display: grid;
+    grid-template-areas: "nav"
+                        "header"
+                        "main"
+                        "footer"; 
+    grid-template-rows: 10vw 25vw 1fr 10vw;
+    min-height: 100vh;
+    height: 100%;
+    width: 100vw;
+}
+/* Grid kode. Hentet fra: https://www.w3schools.com/css/css_grid_container.asp */
+
+nav{
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+
+#mer, .meny_punkt{
+    display: none;
+}
+
+#logo img{
+    width: 10vw;
+    max-width: 70px;
+}
+
+#bars{
+    background-color: black;
+    outline: none;
+    border: none;
+    font-size: 6vw;
+    margin: 1vw;
+}
+
+.nav_meny{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+#subnav_innhold{
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: white;
+    width: 100%;
+}
+
+#subnav_innhold a{
+    float: left;
+    padding: 0.5rem;
+    color: black;
+    text-decoration: none;
+}
+
+.subnav:hover #subnav_innhold{
+    display: block;
+  }
+
+header{
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom right, black, purple, darkmagenta, mediumvioletred, magenta);
+}
+/*Hvordan bruke flere farger som bakgrunn. Hentet fra: https://www.w3schools.com/css/css3_gradients.asp*/
+
+#boks{
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    background-color: #ffffff;
+    border: 2px solid black;
+    opacity: 0.6;
+}
+
+main{
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.A, .AA, .AAA{
+    visibility: hidden;
+}
+/*Hvordan skjule elementer. Hentet fra: https://careerkarma.com/blog/css-hide-element/*/
+
+.tEtabell{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    /* grid-template-rows: repeat(13, 1fr); */
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    background-color: #b3e5fc;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 3vw;
+    max-width: 300px;
+}
+
+.pri{
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+    border: 1px solid black;
+}
+
+.p{
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+    border: 1px solid black;
+}
+
+.retLin{
+    grid-row: 4 / span 1;
+    grid-column: 1 / span 1;
+    border: 1px solid black;
+}
+
+.rL1{
+    grid-row: 5 / span 1;
+    grid-column: 1 / span 1;
+    border: 1px solid black;
+}
+
+.rL2{
+    grid-row: 7 / span 1;
+    grid-column: 1 / span 1;
+    border: 1px solid black;
+}
+
+.rL3{
+    grid-row: 9 / span 1;
+    grid-column: 1 / span 1;
+    border: 1px solid black;
+}
+
+.rL4{
+    grid-row: 11 / span 1;
+    grid-column: 1 / span 1;
+    border: 1px solid black;
+}
+
+.k{
+    grid-row: 4 / span 1;
+    grid-column: 2 / span 1;
+    border: 1px solid black;
+}
+
+.A1{
+    grid-row: 5 / span 1;
+    grid-column: 2 / span 1;
+    border: 1px solid black;
+}
+
+.A2{
+    grid-row: 7 / span 1;
+    grid-column: 2 / span 1;
+    border: 1px solid black;
+}
+
+.A3{
+    grid-row: 9 / span 1;
+    grid-column: 2 / span 1;
+    border: 1px solid black;
+}
+
+.A4{
+    grid-row: 11 / span 1;
+    grid-column: 2 / span 1;
+    border: 1px solid black;
+}
+
+.AA2{
+    grid-row: 8 / span 1;
+    grid-column: 2 / span 1;
+    border: 1px solid black;
+}
+
+.AA4{
+    grid-row: 12 / span 1;
+    grid-column: 2 / span 1;
+    border: 1px solid black;
+}
+
+.AAA1{
+    grid-row: 6 / span 1;
+    grid-column: 2 / span 1;
+    border: 1px solid black;
+}
+
+.AAA3{
+    grid-row: 10 / span 1;
+    grid-column: 2 / span 1;
+    border: 1px solid black;
+}
+
+.AAA4{
+    grid-row: 13 / span 1;
+    grid-column: 2 / span 1;
+    border: 1px solid black;
+}
+
+footer{
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: black;
+}
+
+.sosialeM{
+    display: flex;
+}
+
+.medierTekst{
+    display: none;
+}
+
+.scTop a{
+    font-size: 2.3vw;
+    color: white;
+}
+
+.fa {
+    padding: 1.5vw;
+    font-size: 2vw;
+    width: 2vw;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30%;
+    margin: 1vw;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-pinterest{
+    background: #cb2027;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+@media only screen and (min-width: 500px){
+    body h1{
+        font-size: calc(2rem + 1vw);    
+    }
+    
+    body h2, body h3{
+        font-size: calc(1rem + 1vw);
+    }
+    
+    body p, body a{
+        font-size: calc(0.7rem + 1vw);
+    }
+    /*Kode for å gjøre tekst responsivt. Hentet fra: https://blog.hubspot.com/website/responsive-text*/
+
+    #bars, #L{
+        display: none;
+    }
+
+    #mer{
+        display: contents;
+        border: none;
+        outline: none;
+        background-color: black;    
+        color: white;
+    }
+
+    .p-5{
+        padding-left: 5px;
+    }
+
+    .meny_punkt{
+        display: contents;
+        display: flex;
+        text-decoration: none;
+        color: white;
+    }
+    
+    .nav_meny{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    #subnav_innhold{
+        margin-top: 3vw;
+    }
+    
+    .tEtabell{
+        display: grid;
+        /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+        /* grid-template-rows: repeat(7, 1fr); */
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        max-width: unset;
+    }
+
+    .pri{
+        grid-row: 1 / span 1;
+        grid-column: 1 / span 2;
+    }
+
+    .p{
+        grid-row: 1 / span 1;
+        grid-column: 3 / span 2;
+        padding: 10px;
+    }
+
+    .k{
+        display: none;
+    }
+    .retLin{
+        grid-row: 3 / span 1;
+        grid-column: 1 / span 1;
+        padding: 10px;
+    }
+
+    .rL1{
+        grid-row: 4 / span 1;
+        grid-column: 1 / span 1;
+        padding: 10px;
+    }
+
+    .rL2{
+        grid-row: 5 / span 1;
+        grid-column: 1 / span 1;
+        padding: 10px;
+    }
+
+    .rL3{
+        grid-row: 6 / span 1;
+        grid-column: 1 / span 1;
+        padding: 10px;
+    }
+
+    .rL4{
+        grid-row: 7 / span 1;
+        grid-column: 1 / span 1;
+        padding: 10px;
+    }
+
+    .A, .AA, .AAA{
+        visibility: visible;
+    }
+
+    .A{
+        grid-row: 2 / span 1;
+        grid-column: 2 / span 1;
+        padding: 10px;
+        border: 1px solid black;
+    }
+
+    .A1{
+        grid-row: 4 / span 1;
+        grid-column: 2 / span 1;
+        padding: 10px;
+    }
+
+    .A2{
+        grid-row: 5 / span 1;
+        grid-column: 2 / span 1;
+        padding: 10px;
+    }
+
+    .A3{
+        grid-row: 6 / span 1;
+        grid-column: 2 / span 1;
+        padding: 10px;
+    }
+
+    .A4{
+        grid-row: 7 / span 1;
+        grid-column: 2 / span 1;
+        padding: 10px;
+    }
+
+    .AA{
+        grid-row: 2 / span 1;
+        grid-column: 3 / span 1;
+        padding: 10px;
+        border: 1px solid black;
+    }
+
+    .AA2{
+        grid-row: 5 / span 1;
+        grid-column: 3 / span 1;
+        padding: 10px;
+    }
+
+    .AA4{
+        grid-row: 7 / span 1;
+        grid-column: 3 / span 1;
+        padding: 10px;
+    }
+
+    .AAA{
+        grid-row: 2 / span 1;
+        grid-column: 4 / span 1;
+        padding: 10px;
+        border: 1px solid black;
+    }
+
+    .AAA1{
+        grid-row: 4 / span 1;
+        grid-column: 4 / span 1;
+        padding: 10px;
+    }
+
+    .AAA3{
+        grid-row: 6 / span 1;
+        grid-column: 4 / span 1;
+        padding: 10px;
+    }
+        
+}
+
+@media only screen and (min-width: 900px) {
+    body h1{
+        font-size: 3rem;    
+    }
+        
+    body p, body a{
+        font-size: 1.3rem;
+    }
+
+    #mer, .meny_punkt{
+        display: none;
+    }
+
+    #L{
+        display: contents;
+    }
+
+    .subnav{
+        width: 100%;
+    } 
+
+    #subnav_innhold{
+        display: flex !important;
+        justify-content: space-evenly;
+        position: unset;
+        float: unset;
+        background-color: unset;
+        width: 100%; 
+    }
+
+    .tEtabell{
+        display: contents;
+    }
+
+    .pri, .retLin, .A, .AA, .AAA{
+        visibility: hidden;
+    }
+
+    .fullTabell{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(14, 1fr);
+        background-color: #b3e5fc;
+
+        border: 1px solid black;
+        padding: 10px;
+        margin: 3vw;
+    }
+
+    #p{
+        visibility: visible;
+        grid-row: 1 / span 1;
+        grid-column: 1 / span 1;
+    }
+
+    #r{
+        visibility: visible;
+        grid-row: 1 / span 1;
+        grid-column: 2 / span 1;
+    }
+
+    #kA{
+        visibility: visible;
+        grid-row: 1 / span 1;
+        grid-column: 3 / span 1;
+    }
+
+    #kAA{
+        visibility: visible;
+        grid-row: 1 / span 1;
+        grid-column: 4 / span 1;
+    }
+
+    #kAAA{
+        visibility: visible;
+        grid-row: 1 / span 1;
+        grid-column: 5 / span 1;
+    }
+
+    #p1{
+        grid-row: 2 / span 1;
+        grid-column: 1 / span 1;
+    }
+
+    #r1_1{
+        grid-row: 2 / span 1;
+        grid-column: 2 / span 1;
+    }
+
+    #A1_1{
+        grid-row: 2 / span 1;
+        grid-column: 3 / span 1;
+    }
+
+    #r1_2{
+        grid-row: 3 / span 1;
+        grid-column: 2 / span 1;
+    }
+
+    #r1_3{
+        grid-row: 4 / span 1;
+        grid-column: 2 / span 1;
+    }
+
+    #A1_3{
+        grid-row: 4 / span 1;
+        grid-column: 3 / span 1;
+    }
+
+    #r1_4{
+        grid-row: 5 / span 1;
+        grid-column: 2 / span 1;
+    }
+
+    #A1_4{
+        grid-row: 5 / span 1;
+        grid-column: 3 / span 1;
+    }
+    #AA1_4{
+        grid-row: 5 / span 1;
+        grid-column: 4 / span 1;
+    }
+
+    #AAA1_4{
+        grid-row: 5 / span 1;
+        grid-column: 5 / span 1;
+    }
+
+    #p2{
+        grid-row: 6 / span 1;
+        grid-column: 1 / span 1;
+    }
+
+    #r2_1{
+        grid-row: 6 / span 1;
+        grid-column: 2 / span 1;
+    }
+
+    #r2_2{
+        grid-row: 7 / span 1;
+        grid-column: 2 / span 1;
+    }
+
+    #r2_3{
+        grid-row: 8 / span 1;
+        grid-column: 2 / span 1;
+    }
+
+    #A2_3{
+        grid-row: 8 / span 1;
+        grid-column: 3 / span 1;
+    }
+
+    #AAA2_3{
+        grid-row: 8 / span 1;
+        grid-column: 5 / span 1;
+    }
+
+    #r2_4{
+        grid-row: 9 / span 1;
+        grid-column: 2 / span 1;
+    }
+
+    #A2_4{
+        grid-row: 9 / span 1;
+        grid-column: 3 / span 1;
+    }
+
+    #AA2_4{
+        grid-row: 9 / span 1;
+        grid-column: 4 / span 1;
+    }
+    
+    #AAA2_4{
+        grid-row: 9 / span 1;
+        grid-column: 5 / span 1;
+    }
+
+    #p3{
+        grid-row: 10 / span 1;
+        grid-column: 1 / span 1;
+    }
+
+    #r3_1{
+        grid-row: 10 / span 1;
+        grid-column: 2 / span 1;
+    }
+
+    #A3_1{
+        grid-row: 10 / span 1;
+        grid-column: 3 / span 1;
+    }
+
+    #r3_2{
+        grid-row: 11 / span 1;
+        grid-column: 2 / span 1;
+    }
+
+    #A3_2{
+        grid-row: 11 / span 1;
+        grid-column: 3 / span 1;
+    }
+    
+    #AA3_2{
+        grid-row: 11 / span 1;
+        grid-column: 4 / span 1;
+    }
+
+    #r3_3{
+        grid-row: 12 / span 1;
+        grid-column: 2 / span 1;
+    }
+
+    #A3_3{
+        grid-row: 12 / span 1;
+        grid-column: 3 / span 1;
+    }
+
+    #p4{
+        grid-row: 13 / span 1;
+        grid-column: 1 / span 1;
+    }
+
+    #r4_1{
+        grid-row: 13 / span 1;
+        grid-column: 2 / span 1;
+    }
+
+    #A4_1{
+        grid-row: 13 / span 1;
+        grid-column: 3 / span 1;
+    }
+
+    #subnav_innhold a{
+        color: white;
+    }
+
+    .sosialeM{
+        justify-content: space-evenly;
+        align-content: center;
+        width: 83%;
+    }
+
+    .medierTekst{
+        display: contents;
+        font-size: 17px;
+        color: white;
+    }
+    
+    .fa {
+        font-size: 14px;
+        width: 13px;
+        margin: 5px;
+    }
+
+    .scTop a {
+        font-size: 14px;
+    }
+
+}

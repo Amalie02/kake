@@ -1,0 +1,400 @@
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Montserrat:wght@200&family=Raleway:wght@200&display=swap');
+
+html{
+    font-size: 16px;
+}
+
+body h1{
+    word-break: break-all;
+    font-size: 1.5rem;
+    font-family: 'Aref Ruqaa Ink', serif;    
+
+}
+
+body h2, body h3{
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+}
+
+body p, body a{
+    font-size: 0.9rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.snarvei {
+    position: absolute;
+    left: -2000px;
+    top: 0px;
+    color: white;
+}
+
+.snarvei:focus {
+    left: 0px;
+}
+
+#front-page-container{
+    background-color: papayawhip;
+    display: grid;
+    grid-template-areas: "nav"
+                        "header"
+                        "main"
+                        "footer"; 
+    grid-template-rows: 10vw 25vw 1fr 10vw;
+    min-height: 100vh;
+    height: 100%;
+    width: 100vw;
+}
+/* Grid kode. Hentet fra: https://www.w3schools.com/css/css_grid_container.asp */
+
+nav{
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    font-family: 'Kanit', sans-serif;
+}
+
+#mer, .meny_punkt{
+    display: none;
+}
+
+#logo img{
+    width: 10vw;
+    max-width: 70px;
+}
+
+#bars{
+    background-color: black;
+    outline: none;
+    border: none;
+    font-size: 6vw;
+    margin: 1vw;
+}
+
+.nav_meny{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+#subnav_innhold{
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: white;
+    width: 100%;
+}
+
+#subnav_innhold a{
+    float: left;
+    padding: 0.5rem;
+    color: black;
+    text-decoration: none;
+}
+
+.subnav:hover #subnav_innhold{
+    display: block;
+  }
+
+header{
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover; 
+    background-position: bottom; 
+}
+
+#boks{
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    background-color: #ffffff;
+    border: 2px solid black;
+    opacity: 0.6;
+}
+
+main{
+    grid-area: main;
+    line-height: 1.5; 
+}
+
+#intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #9B718D;
+    font-family: 'Aref Ruqaa Ink', serif;    
+    color: black;
+    font-weight: bold;
+}
+
+#intro p{
+    text-align: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+#knapp{
+    align-self: flex-end;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    width: 19vw;
+    padding: 0.5rem;
+    font-size: 2.5vw;
+    text-decoration: none;
+    color: black;
+    background-color: gainsboro;
+    text-align: center;
+    border: 1.5px solid black
+}
+
+#knapp:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+  /*Kode for å legge til skygge ved hover. Hentet fra: https://codepen.io/sdthornton/pen/wBZdXq*/
+
+#kort_samlet{
+    display: flex;
+    flex-direction: column;
+    margin: 5rem 0rem 5rem 0rem;    
+}
+
+.kort{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3rem 1fr;
+    margin: 1rem;
+    max-width: 400px;
+    background-color: #b3e5fc;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.kort:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    filter: brightness(90%);
+  }
+  /*Kode for å legge til skygge og gjøre artikkelboksen mørkere ved hover. Hentet fra: https://codepen.io/sdthornton/pen/wBZdXq*/
+  
+.img{
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    padding: 1rem;
+    width: 50vw;
+    max-width: 200px;
+}
+
+.oskrft{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+    justify-self: center;
+}
+
+.info{
+    display: flex;
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    padding: 0.5rem;
+    align-items: flex-start;
+}
+
+.les_mer{
+    display: flex;
+    align-items: flex-end;
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    padding-bottom: 3vw;
+}
+
+footer{
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: black;
+}
+
+.sosialeM{
+    display: flex;
+}
+
+.medierTekst{
+    display: none;
+}
+
+.scTop a{
+    font-size: 2.3vw;
+    color: white;
+}
+
+.fa {
+    padding: 1.5vw;
+    font-size: 2vw;
+    width: 2vw;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30%;
+    margin: 1vw;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-pinterest{
+    background: #cb2027;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+@media only screen and (min-width: 500px){
+    body h1{
+        font-size: calc(1.5rem + 1vw);    
+    }
+    
+    body h2, body h3{
+        font-size: calc(0.7rem + 1vw);
+    }
+    
+    body p, body a{
+        font-size: calc(0.5rem + 1vw);
+    }
+    /*Kode for å gjøre tekst responsivt. Hentet fra: https://blog.hubspot.com/website/responsive-text*/
+
+    #bars, #L{
+        display: none;
+    }
+
+    #mer{
+        display: contents;
+        border: none;
+        outline: none;
+        background-color: black;    
+        color: white;
+    }
+
+    .p-5{
+        padding-left: 5px;
+    }
+
+    .meny_punkt{
+        display: contents;
+        display: flex;
+        text-decoration: none;
+        color: white;
+    }
+    
+    .nav_meny{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        /* align-items: flex-start;
+        height: 100%; */
+    }
+
+    #subnav_innhold{
+        margin-top: 3vw;
+    }
+        
+}
+
+@media only screen and (min-width: 800px) {
+    body h1{
+        font-size: 2.2rem;    
+    }
+    
+    body h2, body h3{
+        font-size: 1.6rem;
+    }
+    
+    body p, nav a{
+        font-size: 1.3rem;
+    }
+
+    #mer, .meny_punkt{
+        display: none;
+    }
+
+    #L{
+        display: contents;
+    }
+
+    .subnav{
+        width: 100%;
+    } 
+
+    #subnav_innhold{
+        display: flex !important;
+        justify-content: space-evenly;
+        position: unset;
+        float: unset;
+        background-color: unset;
+        width: 100%; 
+    }
+
+    #subnav_innhold a{
+        color: white;
+    }
+
+    #intro{
+        padding: 1rem;
+    }
+
+    #knapp{
+        width: 5rem;
+        font-size: 1.5rem;
+    }
+
+    #kort_samlet{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly; 
+    }
+
+    .kort{
+        height: 450px;
+    }
+
+    .img{
+        padding-top: 2.5rem;
+    }
+    
+    .sosialeM{
+        justify-content: space-evenly;
+        align-content: center;
+        width: 83%;
+    }
+
+    .medierTekst{
+        display: contents;
+        font-size: 17px;
+        color: white;
+    }
+    
+    .fa {
+        font-size: 14px;
+        width: 13px;
+        margin: 5px;
+    }
+
+    .scTop a {
+        font-size: 14px;
+    }
+    
+}

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="En side som tar for seg cms, og de ulike typene dms, ccms og wcms.">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!--Bilde. Hentet fra: https://www.vecteezy.com/free-vector/autumn, Autumn Vectors by Vecteezy-->
+    <!--Favicon konverterer. Hentet fra: https://realfavicongenerator.net/-->
+
+    <meta property="og:title" content="Content Management System"> 
+    <meta property="og:description" content="Denne siden tar hva CMS er, forskjellen på Headless og Traditional, og tre ulike CMS typer. I tillegg har siden også en tabell som tar for seg fordeler, ulemper, likheter og Ulikheter ved CCMS, DMS og WCMS."> 
+    <meta property="og:url" content="https://itstud.hiof.no/~iagresho/Deleksamen%204/innholdssider/cms.html"> 
+    <meta property="og:image" content="https://itstud.hiof.no/~iagresho/Deleksamen%204/images/cms.jpg"> 
+    <!--Bilde. Hentet fra: https://www.vecteezy.com/free-vector/cms, Cms Vectors by Vecteezy-->
+    <meta property="og:site_name" content="Deleksamen 4"> 
+    <meta property="og:type" content="website"> 
+
+    <meta name="twitter:card" content="summary_large_image"> 
+    <meta name="twitter:title" content="Content Management System"> 
+    <meta name="twitter:description" content="Denne siden tar hva CMS er, forskjellen på Headless og Traditional, og tre ulike CMS typer. I tillegg har siden også en tabell som tar for seg fordeler, ulemper, likheter og Ulikheter ved CCMS, DMS og WCMS."> 
+    <meta name="twitter:site" content="@eksamen22"> 
+    <meta name="twitter:image" content="https://itstud.hiof.no/~iagresho/Deleksamen%204/images/cms.jpg"> 
+    <!--Bilde. Hentet fra: https://www.vecteezy.com/free-vector/cms, Cms Vectors by Vecteezy-->
+    <meta name="twitter:creator" content="@iagresho"> 
+    <!--Implemententering av sosiale meta tagger. Hentet fra: https://www.everywheremarketer.com/blog/ultimate-guide-to-social-meta-tags-open-graph-and-twitter-cards-->
+
+    <link href="../css/style-cms.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Montserrat:wght@200&family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/adccb45baa.js" crossorigin="anonymous"></script>
+    <title>Deleksamen 4</title>
+</head>
+<body>
+    <a name="top"></a>
+    <a href="#hovedinnhold" class="snarvei">Hopp til hovedinnholdet</a>
+    <div itemscope itemtype="https://schema.org/WebPage" id="page-container">
+        <header>
+            <div id="boks">
+                <h1 itemprop="headline">Content Management System</h1>
+            </div>
+        </header>
+        <!--Kode for boks i header. Hentet fra: https://www.w3schools.com/css/css_image_transparency.asp-->
+        <nav>
+            <div id="logo">
+                <a href="../index.html"><img itemprop="image" src="../images/logo.png" alt="logo som fører deg tilbake til startside"></a>
+            </div>
+            <!--Logo. Laget og hentet fra: https://www.freelogodesign.org/-->
+            <div class="nav_meny">
+                <a href="../index.html" class="meny_punkt">Hjem</a>
+                <a href="kontakt-oss.html" class="meny_punkt">Kontakt oss</a>
+                <div class="subnav">
+                    <button title="hamburgermeny" id="bars" class="fa-solid fa-bars fa-1x fa-inverse"></button>
+                    <!--Bars ikon. Hentet fra: https://fontawesome.com/icons/bars?s=solid&f=classic-->
+                    <button title="mer-knapp" id="mer">Mer<i class="fa-solid fa-angle-down fa-inverse p-5"></i></button>
+                    <!--Angle down ikon. Hentet fra: https://fontawesome.com/icons/angle-down?s=solid&f=classic-->
+                    <div id="subnav_innhold">
+                        <div id="L">
+                            <a href="../index.html">Hjem</a>
+                            <a href="kontakt-oss.html">Kontakt oss</a>
+                        </div>
+                        <a href="uu-vs-seo.html">UU Vs. SEO</a>
+                        <a href="cms.html">CMS</a>
+                        <a href="analyse.html">Analyse</a>
+                    </div>
+                </div>
+            </div>
+            <!--Kode for å lage subnavigator. Hentet fra: https://www.w3schools.com/howto/howto_css_subnav.asp-->
+        </nav>
+        <main itemprop="mainContentOfPage" id="hovedinnhold">
+            <article itemprop="speakable" class="innhold">
+                <h2 itemprop="about alternativeHeadline breadcrumb">Hva er CMS?</h2>
+                <div class="bilde">
+                    <img src="../images/cms.jpg" alt="Ilustrasjon av hvordan et content management system funker">
+                    <a href="https://www.vecteezy.com/free-vector/cms">Cms Vectors by Vecteezy</a>
+                </div>
+                <p itemprop="text">CMS er en forkortelse for det engelske navnet «Content Management System» (Optimizely, 2020). Et Content Management System er en programvare som gjør det mulig å redigere og organisere innhold på en nettside. Vi kan dele CMS inn i fem ulike typer, og til hver type finnes en rekke plattformer, blant annet WordPress, Joomla, Drupal, Dropbox, Google Drive osv. Noen av CMS systemene egner seg godt for privatpersoner, andre er mer rettet mot større selskaper. 
+                    <br>CMS systemer har til hensikt å gjøre det enkelt for brukeren å administrere og designe innholdet slik man ønsker det. Oppretting av innhold og visning foregår i sanntid og gjøres i ett og samme system. Det kan sies at CMS har tatt over for tradisjonell koding i HTML. Dersom man lager en nettside med vanlig HTML, krever det spesialkunnskap og mye tid. Ved å ta i bruk CMS blir derimot det som en gang var vanskelig, nå mulig å gjøre ved noen enkle tasteklikk. 
+                    <br>Kort fortalt vil det å ta i bruk CMS systemer føre til stor fleksibilitet og stabilitet. Ved å bruke CMS systemer, kan man enkelt lage dynamiske nettsider uten at man behøver å skrive kodelinjer manuelt.
+                </p>
+            </article>
+            <article itemprop="speakable" class="innhold">
+                <h2 itemprop="about alternativeHeadline breadcrumb">Headless Vs. Traditional</h2>
+                <p itemprop="text">Når vi snakker om CMS systemer nevnes både Headless- og Traditional CMS. Men hva er forskjellen?
+                    <br>Ved tradisjonell CMS ligger alt på ett sted. Det betyr at det eksisterer en kode som henter innholdet fra en forhåndsdefinert mal. Dette gjør det enkelt å håndtere innhold, funksjonalitet og design. Dette er derfor et godt valg av publiseringssystem for de uten mye kompetanse. Samtidig vil den forhåndsdefinert malen begrense brukerens fleksibilitet. Et eksempel på et tradisjonelt system er WordPress.
+                    <br>I et headless CMS ligger innholdet i «hodet», mens design og funksjonalitet befinner seg i «kroppen» (Mediebyrået Enklere Valg, 2021). Slike systemer har altså en kobling mellom frontend og backend. Dette kan føre til problemer for nettsider med mye innhold. Det kan også bli vanskeligere når CMSet skal kobles med andre systemer, da det kan føre til en del koding. Når systemene derimot er koblet sammen, sørger headless CMS for at alle systemene kommuniserer sømløst med hverandre og enkelt sender data via API til frontend. 
+                    <br>Den største fordelen med et headless CMS er at det blir mulig å finne hode og kropp som passer best den enkeltes behov (Guilty, 2019). Dette skaper større fleksibilitet enn ved tradisjonell CMS. Samtidig innebærer denne fleksibiliteten at det blir for fleksibelt for brukeren. Ettersom komponentene kan implementeres hvor som helst, fjerner headless CMS alle begrensninger rundt teknologi brukt av nettsiden eller applikasjonen.
+                </p>        
+            </article>
+            <article itemprop="speakable" class="innhold">
+                <h2 itemprop="about alternativeHeadline breadcrumb">CMS-typer</h2>
+                <p itemprop="text">Som nevnt tidligere i artikkelen finnes det flere ulike typer Content Managment Systems. 
+                    For eksempel: Component Content Management System (CCMS), Document Management System (DMS), Enterprise Content Management System (ECM), Web Content Management System (WCMS) og Digital Asset Management System (DAM). 
+                    Videre i teksten vil jeg ta for meg tre av disse:
+                </p>
+                <section>
+                    <h3 itemprop="breadcrumb about">1.	Component Content Management System (CCMS)</h3> 
+                    <div class="bilde">
+                        <img src="../images/ccms.jpg" alt="Ilustrasjon av de ulike komponentene på en webside">
+                        <a href="https://www.vecteezy.com/free-vector/web-design">Web Design Vectors by Vecteezy</a>
+                    </div>
+                    <p itemprop="text">Å bruke et CCMS har mange fordeler. Et slikt system lar deg håndtere hver komponent, for eksempel et ord, en paragraf eller et bilde, istedenfor en hel side eller et helt dokument (Baker, 2022). 
+                        Det gir deg og teamet ditt mulighet til å arbeide i sanntid uten problemer. Alt innhold ligger samlet. Det blir derfor enkelt å vedlikeholde og oppdatere nettsiden. 
+                        Teamet kan også jobbe sømløst over alle typer plattformer. Dette fører til at det ikke lenger er behov for bruk av klipp og lim. Systemet bruker metadata som gjør det raskt og enkelt å søke etter komponenter. 
+                        I tillegg kan komponenter bevege seg fritt mellom sidene dersom man setter på lenker. Dette fører til at man enkelt kan gjenbruke innholdet. CCMS holder også dokumenter organisert, som gjør det svært oversiktlig og enkelt å samarbeid. 
+                        <br>Denne friheten ved bruk av komponenter fører også med negative sider. Før teamet kan begynne å sette sammen nettsiden, krever det mye planlegging (Nielsen, 2021). 
+                        Dette medfører at det tar lengre tid å evaluere implementeringen på sidene. For større bedrifter som ønsker å ta i bruk CCMS, kan det kreve en del ekstra kostnader. 
+                        Iblant blir det nemlig behov for bedriften å investere i ny teknologi for å modernisere det de allerede har. I tillegg blir overgangen, og bruk av dette systemet en mer arbeidskrevende prosess. 
+                        Bedriften må da ansette flere i teamet.
+                    </p>    
+                </section>
+                
+                <section>
+                    <h3 itemprop="breadcrumb about">2.	Document Management System (DMS)</h3>  
+                    <div class="bilde">
+                        <img src="../images/dms.jpg" alt="Bilde av laptop med dokument ikoner forran">
+                        <a href="https://www.vecteezy.com/free-photos">Free Stock photos by Vecteezy</a>
+                    </div> 
+                    <p itemprop="text">Det er mange fordeler ved å ta i bruk et DMS. Først fordel er at dette systemet allerede er en naturlig del av andre systemer, for eksempel ECM eller WCMS (Aiim, u.å.). Det betyr at det allerede jobber i bakgrunnen av flere andre CMS. DMS bruker funksjoner kalt “check-in/check-out og locking”. Dette hindrer et team fra å gjøre endringer som overskrider hverandre. I tillegg har systemet god versjonskontroll. Brukerne får enkelt se hvordan dokumentet har gradvis endret seg. Automatisk vil systemet også legge igjen revisjonsspor som forteller hvem som har gjort endringer. Ettersom man kan se både hvem og hva som blir endret, lar DMS brukerne mulighet til å aktivere tidligere versjoner hvis en feil skulle oppstå. 
+                        <br>Ved å bruke et DMS eliminerer man problemer rundt manuell filing (Datamaskin, u.å.). Dokumenter og filer som brukes til nettsiden, struktureres elektronisk i mapper. Dokumenter, bilder og andre filer blir da kategorisert og klassifisert. Dette forenkler søkemulighet, som fører til at man bruker mindre tid på å lete etter filer. Ettersom dokumenter og filer liger elektronisk på samme sted, får teamet en god flyt av informasjon mellom plattformer. Disse filene kan da også åpnes og skrives ut uansett datamaskin. I tillegg har systemet sikkerhetskopiering av dokumenter og filer. Dette medfører at alt kan restaureres ved avbrudd eller andre uforutsette hendelser.
+                        <br>Men det er ikke bare positive faktorer ved å bruke et DMS. Systemet tillater verktøy som gir ekstra funksjoner, men de er ofte unødvendige og har høye kostnader (Enadoc, 2022). Det kan også forekomme ekstra kostnader når en bedrifter velger å bli digital. Bedrifter har ofte store mengder data. For å digitalisere dette krever en maskinvare som kan skanne store mengder data. En slik kostnad kan gjør det vanskelig for mindre bedrifter å gjennomføre en slik overgang. Slik som for alle systemer som deler informasjon, blir sikkerhet et problem. Som vi vet, er forretningsdokumenter alltid tiltrekkende for hackere. De er derfor ofte utsatt for angrep som trenger overvåking. I tillegg er slike systemer svært utsatt dersom det oppstår blant annet virus. Ettersom alt ligger elektronisk kan det derfor bli et stort problem dersom noe skjer med teknologien.
+                    </p>
+                </section>
+                <section>
+                    <h3 itemprop="breadcrumb about">3.	Web Content Management System (WCMS)</h3>
+                    <div class="bilde">
+                        <img src="../images/wcms.jpg" alt="Ilustrasjon av webdesigning">
+                        <a href="https://www.vecteezy.com/free-vector/create-website">Create Website Vectors by Vecteezy</a>
+                    </div>
+                    <p itemprop="text">Et WCMS består hovedsakelig av to deler; CMA som gjør det mulig å designe, lage, endre og fjerne innhold, og CDA som gjør om innholdet fra CMA til en nettside (Edwards et al., 2021). 
+                        Dette gjør det enkelt for brukeren å vedlikeholde, kontrollere, endre og sette sammen personalisert innhold på en nettside. 
+                        I tillegg vil det å splitte mellom innhold og design gjøre at systemet kan tilby dynamiske nettsider over ulike plattformer. 
+                        <br>WCMS fungere over flere domener og gjør det mulig for et team å kunne endre innholdet i samme nettside. Systemet har en funksjon som lar den som styrer prosjektet godkjenne endringer før publisering. 
+                        Å kunne arbeide slik over flere domener gir mulighet for sømløst arbeid og informasjonsdeling. WCMS tilbyr i tillegg mulighet til å bestemme hvem som har tilgang til prosjektet. 
+                        Systemet har også god versjonskontroll, og man har mulighet til å hente og undersøke tidligere versjoner av dokumentet. 
+                        WCMS tilbyr også ferdig templates, og plugins som kan enkelt installeres og legges til. Dette gjør det mulig for bruker å enkelt tilpasse nettsiden etter behov. 
+                        Den største fordelen ved å bruke dette systemet er at det er svært brukervennlig og behøver ingen forkunnskaper rundt webutvikling.
+                        <br>Det er mye å like ved WCMS, men med fordelene følger det også ulemper. Først og fremst kan det forekomme høyere kostnader for større bedrifter (Edwards et al., 2021). 
+                        På grunn av alle ekstra funksjonene og mulighetene som følger med, kan et team ha behov for kurs eller spesial trening. 
+                        I tillegg kan programvare trenger oppgraderinger og lisens oppdateringer. Dersom dette ikke gjennomføres kan man oppleve at større systemer bli tregere. 
+                        WCMS står i tillegg ovenfor flere sikkerhets problemer. For å løse disse problemene må man med jevne mellomrom gå over alle de «bevegelige» delene i nettsiden, for eksempel MySQL, plugins eller add-ons. 
+                        Dersom det ikke regelmessig gjøres, vil systemet bli sårbart for hackere. 
+                    </p>
+                </section>
+            </article>
+            <hr>
+            <article itemscope itemtype="https://schema.org/Table">
+            
+                <h2 itemprop="description" id="intro_tabell">Under kommer en tabell med fordeler, ulemper, forskjeller og likheter mellom CCMS, DMS og WCMS:</h2>
+                <div class="samlet_tabell">
+                    <section class="tabell bakgrunn_tabell">
+                        <div itemprop="about headline" class="cms" id="cms1">
+                            <h3>Component Content Management System (CCMS)</h3>
+                        </div>
+                        <div itemprop="alternativeHeadline" class="F" id="F1">
+                            <h3>Fordeler</h3>
+                        </div>
+                        <div itemprop="text" class="f" id="f1">
+                            <ul>
+                                <li>Lar deg håndtere hver komponent.</li>
+                                <li>Mulighet til å arbeide direkte.</li>
+                                <li>Jobbe over alle typer plattformer.</li>
+                                <li>Sporer lenker, versjoner og metadata.</li>
+                                <li>Enkelt å søke etter komponenter.</li>
+                                <li>Organisert.</li>
+                                <li>Lett å gjenbruker innhold.</li>
+                                <li>Enkelt å vedlikeholde og oppdatere.</li>
+                            </ul>    
+                        </div>
+                        <div itemprop="alternativeHeadline" class="U" id="U1">
+                            <h3>Ulemper</h3>
+                        </div>
+                        <div itemprop="text" class="u" id="u1">
+                            <ul>
+                                <li>Planleggingskrevende før oppstart.</li>
+                                <li>Iblant behov for investeringer.</li>
+                                <li>Bruke tid på å evaluere implementeringen.</li>
+                                <li>Mer arbeidskrevende prosess.</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="tabell bakgrunn_tabell">
+                        <div itemprop="about headline" class="cms" id="cms2">
+                            <h3>Document Management System (DMS)</h3>
+                        </div>
+                        <div itemprop="alternativeHeadline" class="F" id="F2">
+                            <h3>Fordeler</h3>
+                        </div>
+                        <div itemprop="text" class="f" id="f2">
+                            <ul>
+                                <li>Del av andre systemer.</li>
+                                <li>«Check-in/check-out og locking»</li>
+                                <li>Versjonskontroll.</li>
+                                <li>Aktivere tidligere versjoner.</li>
+                                <li>Revisjonsspor.</li>
+                                <li>Elektronisk strukturering.</li>
+                                <li>Forenklet søkemulighet.</li>
+                                <li>Sømløs informasjonsdeling.</li> 
+                                <li>Sikkerhetskopierer.</li>
+                            </ul>
+                        </div>
+                        <div itemprop="alternativeHeadline" class="U" id="U2">
+                            <h3>Ulemper</h3>
+                        </div>
+                        <div itemprop="text" class="u" id="u2">
+                            <ul>
+                                <li>Dyre verktøy.</li>
+                                <li>Ekstra kostnader.</li>
+                                <li>Kan føre til problemer dersom noe skjer med teknologien.</li>
+                                <li>Utsatt for hackere.</li>
+                                <li>Virus.</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="tabell bakgrunn_tabell">
+                        <div itemprop="about headline" class="cms" id="cms3">
+                            <h3>Web Content Management System (WCMS)</h3>
+                        </div>
+                        <div itemprop="alternativeHeadline" class="F" id="F3">
+                            <h3>Fordeler</h3>
+                        </div>
+                        <div itemprop="text" class="f" id="f3">
+                            <ul>
+                                <li>Brukervennlig.</li>
+                                <li>Enkelt å vedlikeholde, kontrollere, endre og sette sammen.</li>
+                                <li>Dynamiske nettsider.</li>
+                                <li>Fungerer over flere plattformer.</li>
+                                <li>Sømløs informasjonsdeling.</li>
+                                <li>God kontroll.</li>
+                                <li>Enkelt å tilpasse.</li>
+                                <li>Tilbyr ferdig templates, og plugins.</li>
+                                <li>Versjonskontroll.</li>
+                            </ul>
+                        </div>
+                        <div itemprop="alternativeHeadline" class="U" id="U3">
+                            <h3>Ulemper</h3>
+                        </div>
+                        <div itemprop="text" class="u" id="u3">
+                            <ul>
+                                <li>Høyere kostnader.</li>
+                                <li>Større systemer bli tregere.</li>
+                                <li>Krever mye vedlikehold.</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="tabell_4 bakgrunn_tabell">
+                        <div itemprop="about" class="overskrift" id="LU">
+                            <h3 itemprop="headline">Ulikheter/Likheter</h3>
+                        </div>
+                        <div itemprop="text" id="lu">
+                            <ul>
+                                <li>CCMS og WCMS lar deg håndtere komponentene enkeltvis.</li> 
+                                <li>DMS bruker “check-in/check-out” og “locking”, som gjør den mer “idiotsikkert”.</li>
+                                <li>CCMS gjør vedlikehold og oppdateringer enkelt, DMS hindrer at man gjør endringer som overskriver hverandre, og sporingen av endringer gjør det lettere å gjenopprette til tidligere versjoner. WCMS gir også en tilsvarende kontroll over tidligere versjoner.</li> 
+                                <li>CCMS, WCMS og DMS fungerer sømløst over alle plattformer.</li>
+                                <li>Alle tre bruker metadata.</li>
+                                <li>CCMS lar deg enkelt gjenbruke innholdet da komponenter kan bevege seg fritt mellom sidene ved hjelp av lenker.</li>
+                                <li>CCMS, Dms og WCMS er svært organiserte.</li>
+                                <li>DMS er allerede en naturlig del av andre systemer, mens CCMS og WCMS krever at man starter fra “scratch”.</li> 
+                                <li>DMS, CCMS og WCMS kan alle innebære store kostnader for etablering for bedrifter.</li> 
+                                <li>WCMS skiller tydelig mellom innhold og design, mens CCMS ser på dette som en helhet.</li>
+                                <li>DMS er sårbart for hacking og virus, WCMS er sårbart om ikke de bevegelige delene oppdateres/endres jevnlig.</li> 
+                                <li>WCMS, DMS og CCMS har god publiseringskontroll. </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </article>
+            <hr>
+            <section itemscope itemtype="https://schema.org/CreativeWork" class="innhold" id="ref">
+                <h2>Refferanser</h2>
+                <p itemprop="citation">Aiim. (u.å.). What is Document Management (DMS)?. Hentet 25. oktober 2022, fra <a href="https://www.aiim.org/what-is-document-imaging">
+                    https://www.aiim.org/what-is-document-imaging</a></p>
+                <p itemprop="citation">Baker, J. (2022, 20. september). What is a Component Content Mangament System? Heretto. <a  href="https://heretto.com/what-is-a-component-content-management-system/">
+                    https://heretto.com/what-is-a-component-content-management-system/</a></p>
+                <p itemprop="citation">Datamaskin. (u.å.). Hva er fordelene ved et Document Managing System? Hentet 25. oktober 2022, fra <a href="http://www.datamaskin.biz/Software/productivity-software/164433.html">
+                    http://www.datamaskin.biz/Software/productivity-software/164433.html</a></p>
+                <p itemprop="citation">Edwards, D., Kiwak, K. & Bock, G. (2021, januar). What is a web content management system (WCMS)?. Content Management. <a href="https://www.techtarget.com/searchcontentmanagement/definition/web-content-management-WCM">
+                    https://www.techtarget.com/searchcontentmanagement/definition/web-content-management-WCM</a></p>
+                <p itemprop="citation">Enadoc. (2022, 11. juli). Document Management System: Advantages and Disadvantages. Enadoc. <a href="https://www.enadoc.com/advantages-and-disadvantages-of-a-document-management-system/">
+                    https://www.enadoc.com/advantages-and-disadvantages-of-a-document-management-system/</a></p>
+                <p itemprop="citation">Guilty. (2019, 11. desember). Headless CMS: Slik er det til forskjellfra et tradisjonellt CMS. Guilty. <a href="https://guilty.no/blogg/headless-cms-slik-er-det-til-forskjell-fra-et-tradisjonelt-cms">
+                    https://guilty.no/blogg/headless-cms-slik-er-det-til-forskjell-fra-et-tradisjonelt-cms</a></p>
+                <p itemprop="citation">Mediebyrået Enklere Valg. (2021, 15. oktober). Fordeler med headless CMS - Enklere Valg. <a href="https://enklerevalg.no/blogg/fordeler-med-headless-cms/">
+                    https://enklerevalg.no/blogg/fordeler-med-headless-cms/</a></p>
+                <p itemprop="citation">Nielsen, E. (2021, 17. desember). What is a Component Content Management System (CCMS)? Hypgraph. <a href="https://hygraph.com/blog/what-is-a-component-content-management-system">
+                    https://hygraph.com/blog/what-is-a-component-content-management-system</a></p>
+                <p itemprop="citation">Optimizely. (2020, 24. august). Hva er et CMS?. Optimizely. <a href="https://www.optimizely.com/no/insights/blog/hva-er-et-cms/">
+                    https://www.optimizely.com/no/insights/blog/hva-er-et-cms/</a></p>
+            </section>
+        </main>
+        <footer>
+            <div class="sosialeM">
+                <div>
+                    <a href="" class="fa fa-facebook"></a>
+                    <span class="medierTekst">Facebook</span>
+                </div>
+                <div>
+                    <a href="" class="fa fa-pinterest"></a>
+                    <span class="medierTekst">Pinterest</span>
+                </div>
+                <div>
+                    <a href="" class="fa fa-twitter"></a>
+                    <span class="medierTekst">Twitter</span>
+                </div>
+            </div>
+            <!--Delingsknapper for sosiale medier. Hentet fra: https://www.w3schools.com/howto/howto_css_social_media_buttons.asp-->
+            <span class="scTop"><a href="#top">Til toppen av siden</a></span>
+            <!--Kode som tar deg til toppen av siden. Hentet fra: https://www.computerhope.com/issues/ch001475.htm-->
+        </footer>
+    </div>
+</body>
+</html>
+<!--Microdata. Hentet fra: https://schema.org/-->

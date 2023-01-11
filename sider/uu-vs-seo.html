@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="En side som ¨tar for seg, og setter universell utforming og søkemotoroptimalisering mot hverandre.">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!--Bilde. Hentet fra: https://www.vecteezy.com/free-vector/autumn, Autumn Vectors by Vecteezy-->
+    <!--Favicon konverterer. Hentet fra: https://realfavicongenerator.net/-->
+
+    <meta property="og:title" content="Universell Utforming Vs. Søkemotoroptimalisering"> 
+    <meta property="og:description" content="Denne siden tar for seg UU og SEO, og hvordan man oppnår det. I tillegg har siden også en tabell som tar for seg microdata og semantikk, og hvordan det brukes i UU og SEO."> 
+    <meta property="og:url" content="https://itstud.hiof.no/~iagresho/Deleksamen%204/innholdssider/uu-vs-seo.html"> 
+    <meta property="og:image" content="https://itstud.hiof.no/~iagresho/Deleksamen%204/images/website.jpg"> 
+    <!--Bilde. Hentet fra: https://pixabay.com/illustrations/website-responsive-creative-design-3374825/--> 
+    <meta property="og:site_name" content="Deleksamen 4"> 
+    <meta property="og:type" content="website"> 
+
+    <meta name="twitter:card" content="summary_large_image"> 
+    <meta name="twitter:title" content="Universell Utforming Vs. Søkemotoroptimalisering"> 
+    <meta name="twitter:description" content="Denne siden tar for seg UU og SEO, og hvordan man oppnår det. I tillegg har siden også en tabell som tar for seg microdata og semantikk, og hvordan det brukes i UU og SEO."> 
+    <meta name="twitter:site" content="@eksamen22"> 
+    <meta property="twitter:image" content="https://itstud.hiof.no/~iagresho/Deleksamen%204/images/website.jpg"> 
+    <!--Bilde. Hentet fra: https://pixabay.com/illustrations/website-responsive-creative-design-3374825/--> 
+    <meta name="twitter:creator" content="@iagresho"> 
+    <!--Implemententering av sosiale meta tagger. Hentet fra: https://www.everywheremarketer.com/blog/ultimate-guide-to-social-meta-tags-open-graph-and-twitter-cards-->
+
+    <!-- <meta name="description" content="En gjennomgang av universell utforming og søkemotoroptimalisering, og en tabell som går igjennom funksjonen microdata og semantikk har i disse."> -->
+    <link href="../css/style-uu-seo.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Montserrat:wght@200&family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/adccb45baa.js" crossorigin="anonymous"></script>
+    <title>Deleksamen 4</title>
+</head>
+<body>
+    <a name="top"></a>
+    <a href="#hovedinnhold" class="snarvei">Hopp til hovedinnholdet</a>
+    <div itemscope itemtype="https://schema.org/WebPage" id="page-container">
+        <header>
+            <div id="boks">
+                <h1 itemprop="headline">Universell Utforming Vs. Søkemotoroptimalisering</h1>
+            </div>
+        </header>
+        <nav>
+            <div id="logo">
+                <a href="../index.html"><img itemprop="image" src="../images/logo.png" alt="logo som fører deg tilbake til startside"></a>
+            </div>
+            <!--Logo. Laget og hentet fra: https://www.freelogodesign.org/-->
+            <div class="nav_meny">
+                <a href="../index.html" class="meny_punkt">Hjem</a>
+                <a href="kontakt-oss.html" class="meny_punkt">Kontakt oss</a>
+                <div class="subnav">
+                    <button title="hamburgermeny" id="bars" class="fa-solid fa-bars fa-1x fa-inverse"></button>
+                    <!--Bars ikon. Hentet fra: https://fontawesome.com/icons/bars?s=solid&f=classic-->
+                    <button title="mer-knapp" id="mer">Mer<i class="fa-solid fa-angle-down fa-inverse p-5"></i></button>
+                    <!--Angle down ikon. Hentet fra: https://fontawesome.com/icons/angle-down?s=solid&f=classic-->
+                    <div id="subnav_innhold">
+                        <div id="L">
+                            <a href="../index.html">Hjem</a>
+                            <a href="kontakt-oss.html">Kontakt oss</a>
+                        </div>
+                        <a href="uu-vs-seo.html">UU Vs. SEO</a>
+                        <a href="cms.html">CMS</a>
+                        <a href="analyse.html">Analyse</a>
+                    </div>
+                </div>
+            </div>
+            <!--Kode for å lage subnavigator. Hentet fra: https://www.w3schools.com/howto/howto_css_subnav.asp-->
+        </nav>
+        <main itemprop="mainContentOfPage">
+            <div itemprop="description text" id="intro">
+                <p>Internett har i dag blitt en stor del av hverdagen, og er utbredt over hele verden. Med bare få tasteklikk blir man sendt ut i et hav av informasjon. 
+                    Uansett hva du lurer på, er du garanter å finne noe om det på nettet. Ved å skrive inn stikkord eller en setning, dukker det opp utallige søkertreff. 
+                    Hva bestemmer rekkefølgen på søkertreffene, og hvordan kan det gjøres tilgjengelig for alle?
+                </p>
+            </div>
+            <article itemprop="speakable" class="innhold" id="hovedinnhold">
+                <h2 itemprop="about alternativeHeadline breadcrumb">Søkemotoroptimalisering</h2>
+                <img src="../images/seo.jpg" alt="Bilde av en laptop med texten seo på.">
+                <!--Bilde. Hentet fra: https://pixabay.com/photos/search-engine-optimization-seo-4111000/-->
+                <p itemprop="text">Som nevnt tidligere eksisterer det utallige nettsider, mange med ganske likt innhold. 
+                    Hvordan skal du klare å konkurrere med disse sidene for å få akkurat din side på toppen? Løsningen er å ha god SEO. 
+                    SEO kommer fra det engelske uttrykket «Search Engine Optimization», og blir oversatt til søkermotoroptimalisering (Moodgruppen, u.å.). 
+                    God SEO oppnår man ved å tilpasse seg søkemotorens retningslinjer (Høgskolen i Østfold, 2022a). Disse retningslinjene endrer seg ofte og krever derfor mye jobb å opprettholde. 
+                    Algoritmen til søkemotoren endrer seg også fra dag til dag. På grunn av de millionene av nettsidene lagt ut, vil det å få gode resultater ved hjelp av SEO ta tid. 
+                    I tillegg vil det alltid være stor konkurranse. Nytt innhold blir publisert og konkurrenter vil arbeide god for å ligge på toppen. 
+                    <br>Søkemotorer som Google og Bing, rangerer nettsider basert på ulike faktorer. Dette gjelder faktorer “på” siden, og “utenfor” siden. For å komme seg lengre opp på listen må man følge disse faktorene på best mulig måte. 
+                    Faktorer “på” siden er innhold, arkitektur og HTML. Faktorer “utenfor” siden er tillit, linker, lokalitet og sosialt. 
+                    <br>Når man er inne på temaet SEO, er det naturlig å nevne SEM. Tidligere har jeg skrevet at man bare kan komme høyere på rangen dersom man forbedrer SEO, men det finne et annet alternativ. 
+                    SEM (Search Engine Marketing) er den kostnadsbaserte delen av SEO. På toppen av rangeringen i søkemotoren ligger det betalte annonser. Dette er altså betalt systematisering. 
+                    Utseendemessig ligner en SEM mye på en vanlig SEO. Den eneste forskjellen er ordet ”annonse” som står skrevet over tittelen. SEM vil altså være mer lønnsomt enn SEO dersom man kun ser på rangering og ikke tar hensyn til de ekstra omkostningene plasseringen vil medføre. 
+                </p>        
+            </article>
+            <article itemprop="speakable" class="innhold">
+                <h2 itemprop="about alternativeHeadline breadcrumb">Hvordan oppnå god SEO?</h2>
+                <p itemprop="text">I denne delen av artikkelen vil jeg ta for meg noen viktige faktorer man kan se på for å forbedre SEO. Det første vi ser på er hvordan Crawleren som besøker din nettside (Shirey, u.å.) som besøker din nettside. 
+                    En av de tingene en Crawler ser på er innhold på nettsiden (Høgskolen i Østfold, 2022a). Innholdet må ha god kvalitet og samsvare med søketreffet. 
+                    Korrekte titler og god bruk av headere er også noe en Crawler vil se på. Det er derfor viktig å gi navn som er logiske for søkemotoren. Nettsiden må i tillegg skille godt mellom innhold, 
+                    design og funksjonalitet og ha en bra struktur. Dersom man følger dette blir siden tilgjengelig og lettere for en Crawler å indeksere (Dalsaune, 2022). 
+                    For å lage god struktur av en side, tar man i bruk semantiske tagger. Semantiske tagger kan være header, nav, Main og footer. 
+                    Disse taggene i samspill med innhold, forteller oss hva siden handler om. Ved å legge til andre tagger som breadcrumbs gjør man det lettere for brukeren å vite hvor han befinner seg, 
+                    og det blir også lettere å navigere rundt på siden. Denne taggen gir i tillegg en enkel vei tilbake til andre sider. 
+                    <br>Dersom man er flink til å legge ved gode nøkkelord på nettsiden, vil det føre til at siden tiltrekker seg målrettet trafikk. 
+                    I noen tilfeller vil disse besøkende ende opp som kunder. Folk søker sjeldent på spesifikke selskaper for å se hva de tilbyr, de søker som oftest etter noe de ønsker og de selskapene som tilbyr dette dukker opp. 
+                    De fleste som søker benytter seg av nøkkelord eller enkle setninger. 
+                    <br>Det er viktig at Crawler kan lese indeksene på nettsiden. Dette for å kunne gjøre jobben sin på en så god måte som mulig. 
+                    For å sjekke indeksen finnes det ulike verktøy man kan benytte. Dersom siden ikke er indeksert, er det viktig å bruke ulike addme-tjenester for å få andre til å linke til siden. 
+                    I tillegg kan man bruke <a href="https://search.google.com/search-console/welcome">Search Console </a>(tidligere kjent som Google Webmaster Tools) for å legge nettsiden til indeksering. 
+                    Oppdateringsfrekvensen til nettsiden vil også avgjøre hvor ofte Crawleren besøker siden. Dette er med på å avgjøre hvor viktig og «fresh» siden er. 
+                    Dersom det er for lenge mellom hver gang siden blir oppdatert, blir den sett på som «død».
+                    <br>Det er ikke bare viktig å beskrive det tekstlige innholdet, men også figurene. Derfor må man huske å legge til gode beskrivelser til for eksempel bilder. 
+                    Gode nøkkelord eller søkeord er mulig å finne via ulike verktøy. Slik vet brukeren hva siden handler om og hva figuren avbilder. 
+                    Det er også viktig å legge merke til hvilke nøkkelord konkurrentene bruker. 
+                    <br>Noe annet som hjelper nettsiden med å oppnå god SEO er authority. 
+                    God site authority betyr at søkemotoren ser på hver side på en nettområdet som viktig. Dette gjelder også nøkkelordene og temaene. 
+                    Det er derfor viktig å linke til alle sidene hver for seg slik at man forenkler indekseringen av nettområdet, og gjør det mulig å nå alle sidene med få hopp. 
+                    <br>Eksterne lenker er en av de viktigste delene av SEO. De er blant annet med på å gi større autoritet. 
+                    Vi lever i en verden der sosiale medier er godt forankret i dagliglivet og det er derfor viktig at nettområdet er både sosialt tilknyttet og har et godt rykte. 
+                    Veldig mange brukere av sosiale medier handler ut fra venners og andre mediers anbefalinger. Det er derfor viktig med inngående lenker. 
+                    Dette kan oppnås ved at man blant annet bør være flink til å aktivt legge ved lenke til egen side når man bruker sosiale medier. 
+                    Derimot kan det påvirke din SEO negativt om en «dårlig» side velger å linke til din side.
+                    <br>Dersom man velger å jukse i semantikken ved å bruke for eksempel feil søkeord for å rangeres høyere av søkemotoren, blir nettsiden utvist. 
+                    Dette gjelder også ved duplisering. Velger du å kopiere andres innhold medfører dette dårlig rangering av din side. 
+                    Om ditt innhold ikke dukker opp først ved indeksering, blir det sett på som en sekundær kilde.
+                    <br>Kort oppsumert handler søkemotoroptimalisering om å gjøre nettsiden attraktiv for søkemotoren og besøkende. 
+                    Det er en kontinuerlig jobb som krever mye kunnskap og høyt tidsforbruk. I tillegg må SEO gjøres på nytt hver gang man legger inn nytt innhold på nettsiden.              
+                </p>
+            </article>
+            <article itemprop="speakable" class="innhold">
+                <h2 itemprop="about alternativeHeadline breadcrumb">Universell Utforming</h2>
+                <img src="../images/uu.png" alt="Bilde av ikoner for ulike vansker.">
+                <!--Bilde. Hentet fra: https://pixabay.com/illustrations/communication-icons-3253476/-->
+                <p itemprop="text">Et viktig emne i dagens samfunn er likestilling. Dette gjelder ikke bare mellom mennesker, men også på nettet. 
+                    For å oppnå dette tar utviklere i bruk noe som kalles UU (Akerbæk, 2022). 
+                    UU er en forkortelse for Universell Utforming. Som ordet sier, handler det om å likestille tilgjengeligheten for alle brukere av en nettside. 
+                    Det er tross alt en menneskerett å ha mulighet til å delta i samfunnet, selv når samfunnet blir mer digitalt. Målet med UU er å gjøre det enkelt for flest mulig å orienter og bevege seg inne på en nettside (Bufdir, u.å.). 
+                    Med UU kan mennesker med ulik grad av funksjonsevnenedsettelse føle seg inkludert. Det å kunne delta aktivt i samfunnet er svært viktig for de fleste. 
+                    UU er ikke bare lovpålagt, men er også lønnsomt for blant annet salgssider. Dersom nettsiden ikke er tilgjengelig for alle, vil siden selge dårligere og butikken vil tape penger. 
+                    <br>De ulike vanskene man skal ta hensyn til når man lager en nettside er delt inn i fire hovedkategorier; syn, hørsel, motorisk og kognitiv. 
+                    Dette kan være for eksempel svaksynte, døve, mennesker med nedsatt finmotorikk eller mennesker med forskjellig grad av lærevansker. For å oppnå god tilgjengelighet og universell utforming må man følge en del prinsipper. 
+                    Blant annet må man sørge for at innholdet har god lesbarhet, fornuftige alternative tekster til bilder, god semantikk på HTML-dokumentet, osv. 
+                    Listen med prinsipper er lang, og det kan være vanskelig å vite hvordan man implementerer de forskjellige punktene. 
+                    Web Content Accesebility Guidelines (WCAG) er en nettside med de nyeste anbefalte retningslinjene man bør følge (Web Content Accessibility Guidelines (WCAG) 2.0, u.å.). 
+                    Disse retningslinjene dekker et bredt spekter med vansker, og vil gjøre nettsiden mer tilgjengelig og brukervennlig. En annen viktig side man bør ta i bruk er UU-tilsynets egen nettside (uutilsynet, u.å.). 
+                    På denne siden finner du UU loven og krav og tilgjengelighetserklæring for UU. I tillegg har de egne veiledninger for hvordan man implementerer dette til blant annet egen nettside. 
+                    En annen side man kan bruke som et hjelpemiddel er WebAccessibility In Mind (WebAIM) (WebAIM, u.å.). 
+                    Denne nettsiden tilbyr blant annet en rekke verktøy man kan bruke for å teste ulike deler av egen nettside. 
+                </p>
+            </article>
+            <hr>
+           
+            <article itemscope itemtype="https://schema.org/Table">
+            <h2 itemprop="description" id="intro_tabell">Under kommer en tabell som tar for seg microdata og semantikk, og hvordan det henger sammen og påvirker UU og SEO:</h2>
+            <div id="uu_seo_tabell">
+                <section class="tabell bakgrunn_tabell">
+                    <div itemprop="about headline" class="ovrskrf" id="uu">
+                        <h3>Universell Utforming</h3>
+                    </div>
+                    <div itemprop="about alternativeHeadline" class="M" id="md">
+                        <h3>Microdata</h3>
+                    </div>
+                    <div itemprop="text" class="m" id="m1">
+                        <p>Microdata har den samme funksjonen som semantiske tagger. 
+                        Ved hjelp av disse entra attributtene, kan man forbedre UU på nettsiden (Høgskolen i Østfold , 2022b). 
+                        Som nevnt tidligere i teksten, bruker nettsiden semantiske 
+                        tagger til å blant annet lage «shortcuts» og gi informasjon til brukeren. 
+                        Dette kan man forbedre ved merking av breadcrumbs med mikrodata. 
+                        Ved slike tilfeller kan brukeren på en enda mer oversiktlig måte se hvor 
+                        på siden de befinner seg. Det vil også gi mulighet til å navigeres seg 
+                        flere steder på siden. Dette hjelper brukere som beveger seg gjennom rundt ved hjelp av piltastene.</p>
+                    </div>
+                    <div itemprop="about alternativeHeadline" class="S" id="st">
+                        <h3>Semantikk</h3>
+                    </div>
+                    <div itemprop="text" class="s" id="s1">
+                        <p>Semantikk brukes i et HTML dokument til markere hvor ulikt innhold hører til. Dette blir også lest ute i nettsiden. Ved å markere hvert element lager man shortcuts på siden. Dette forbedrer derfor UU for de med blant annet nedsatt motorikk. Disse brukerne beveger seg igjennom en side ved hjelp av piltastene. Shortcutsen vil da la brukeren hoppe til ulike deler, i stedet for å måtte bevege seg gjennom hele nettsiden.</p>
+                    </div>
+                </section>
+                <section class="tabell bakgrunn_tabell">
+                    <div itemprop="about headline" class="ovrskrf" id="seo">
+                        <h3>Søkemotoroptimalisering</h3>
+                    </div>
+                    <div itemprop="about alternativeHeadline" class="M" id="Md">
+                        <h3>Microdata</h3>
+                    </div>
+                    <div itemprop="text" class="m" id="m2">
+                        <p>Microdata fungere mye likt som semantiske tagger (Karlsen, 2022). Den største forskjellen er at microdata ikke ligger som tagger, men legges til ved bruk av attributter i HTML koden. Det beskriver hva innholdet på nettsiden er, i tillegg til å fortelle hvorfor det ligger der. De samme reglene gjelder for microdata, som for semantiske tagger og nøkkelord. Dersom man prøver å jukse blir man bannlyst. Microdata kommer i tillegg til semantiske elementer. Ved å strukturere data på en slik måte, blir informasjonen merket med mer semantisk verdi. Dette forbedrer da SEO ved å gjøre det mer tilgjengelig for Crawler. Det finnes flere verktøy som bidrar til å skrive microdata. 
+                        En av de med mest utbredt vokabularet er <a href="https://schema.org/">Schema</a>. Dette er en åpen kildekode samfunn som brukes av blant annet av Google og Bing. Dette verktøyet har ferdiglaget definisjoner på flere ulike ting, for eksempel filmer, artikkler, artister osv. Microdata kan bli brukt i flere deler av koden, for eksempel i breadcrumbs eller en artikkel.</p>
+                    </div>
+                    <div itemprop="about alternativeHeadline" class="S" id="St">
+                        <h3>Semantikk</h3>
+                    </div>
+                    <div itemprop="text" class="s" id="s2">
+                        <p>Å ta i bruk semantiske tagger vil forbedre SEO på en nettside svært mye. De semantiske taggene er det som forteller hva siden inneholder. Dette hjelper en søkemotor med lett kunne se hva den inneholder. Det vil si at søkemotoren vil da vite ved hvilke nøkkelord din side burde dukke opp. I tillegg bidrar god semantikk til at en Crawler sendt fra søkemotoren kan raskere indeksere siden.</p>
+                    </div>
+                </section> 
+            </div>
+            </article>
+            <hr>
+            <section itemscope itemtype="https://schema.org/CreativeWork" class="innhold" id="ref">
+                <h2>Refferanser</h2>
+                <p itemprop="citation">Akerbæk, T. M. (2022, 3. oktober). Tilgjengelighet og universell utforming. Høgskolen i Østfold. Hentet 28. oktober 2022, fra <a href="https://hiof.instructure.com/courses/6307">
+                    https://hiof.instructure.com/courses/6307</a></p>
+                <p itemprop="citation">Amundsen Karlsen, A.-C. B. (2022, 12. oktober). Web of Data. Høgskolen i Østfold . Hentet 28. oktober 2022, fra <a href="https://www.mentimeter.com/app/presentation/almfo3eydjdmjwifdho1ooij8g8254gf/vbfx98r9u8d8">
+                    https://www.mentimeter.com/app/presentation/almfo3eydjdmjwifdho1ooij8g8254gf/vbfx98r9u8d8</a></p>
+                <p itemprop="citation">Bufdir. (u.å.). Universell utforming og tilgjengelighet. Hentet 28. oktober 2022, fra <a href="https://ny.bufdir.no/likestilling/universell-utforming/">
+                    https://ny.bufdir.no/likestilling/universell-utforming/</a></p>
+                <p itemprop="citation">Dalsaune, K. A. (2022, 14. mars). Semantisk HTML - Konseptutvikling og programmering - NDLA. ndla.no. <a href="https://ndla.no/nb/subject:1:1352b19e-e706-4480-a728-c6b0a57ba8ae/topic:1:f7b88f8c-5f2f-4ea8-bdcf-1bd4811c37b3/topic:1:df9278b0-7252-4a62-a39c-3107d7f319f1/resource:8c2c0c8e-11cd-488a-a1af-145f4632cdb3">
+                    https://ndla.no/nb/subject:1:1352b19e-e706-4480-a728-c6b0a57ba8ae/topic:1:f7b88f8c-5f2f-4ea8-bdcf-1bd4811c37b3/topic:1:df9278b0-7252-4a62-a39c-3107d7f319f1/resource:8c2c0c8e-11cd-488a-a1af-145f4632cdb3</a></p>
+                <p itemprop="citation">Høgskolen i Østfold. (2022a, 10. oktober). Søkemotor optimalisering. Hentet 27. oktober 2022, fra <a href="https://hiof.instructure.com/courses/6307">
+                    https://hiof.instructure.com/courses/6307</a></p>
+                <p itemprop="citation">Høgskolen i Østfold. (2022b, 12. oktober). Web of Data. Hentet 28. oktober 2022, fra <a href="https://hiof.instructure.com/courses/6307">
+                    https://hiof.instructure.com/courses/6307</a></p>
+                <p itemprop="citation">Moodgruppen. (u.å.). Hva er SEO? – Google optimalisering. Nettrafikk. Hentet 27. oktober 2022, fra <a href="https://nettrafikk.no/sokemotoroptimalisering/hvaerseo">
+                    https://nettrafikk.no/sokemotoroptimalisering/hvaerseo</a></p>
+                <p itemprop="citation">Shirey, T. (u.å.). Web Crawler 101: What Is a Web Crawler and How Do Crawlers Work? WebFX. Hentet 27. oktober 2022, fra <a href="https://www.webfx.com/blog/internet/what-is-a-web-crawler/">
+                    https://www.webfx.com/blog/internet/what-is-a-web-crawler/</a></p>
+                    
+                <p itemprop="citation">Uutilsynet. (u.å.). Tilsynet for universell utforming av ikt. Hentet 28. oktober 2022, fra <a href="https://www.uutilsynet.no/">
+                    https://www.uutilsynet.no/</a></p>
+                <p itemprop="citation">Web Content Accessibility Guidelines (WCAG) 2.0. (u.å.). Hentet 28. oktober 2022, fra <a href="https://www.w3.org/TR/WCAG20/#guidelines">
+                    https://www.w3.org/TR/WCAG20/#guidelines</a></p>
+                <p itemprop="citation">WebAIM. (u.å.). Hentet 28. oktober 2022, fra <a href="https://webaim.org/">
+                    https://webaim.org/</a></p>
+            </section>
+        </main>
+        <footer>
+            <div class="sosialeM">
+                <div>
+                    <a href="" class="fa fa-facebook"></a>
+                    <span class="medierTekst">Facebook</span>
+                </div>
+                <div>
+                    <a href="" class="fa fa-pinterest"></a>
+                    <span class="medierTekst">Pinterest</span>
+                </div>
+                <div>
+                    <a href="" class="fa fa-twitter"></a>
+                    <span class="medierTekst">Twitter</span>
+                </div>
+            </div>
+            <!--Delingsknapper for sosiale medier. Hentet fra: https://www.w3schools.com/howto/howto_css_social_media_buttons.asp-->
+            <span class="scTop"><a href="#top">Til toppen av siden</a></span>
+            <!--Kode som tar deg til toppen av siden. Hentet fra: https://www.computerhope.com/issues/ch001475.htm-->
+        </footer>
+    </div>
+</body>
+</html>
+<!--Microdata. Hentet fra: https://schema.org/-->
